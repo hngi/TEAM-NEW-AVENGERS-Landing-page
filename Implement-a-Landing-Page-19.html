@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <title>Title</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--    font-->
+    <link href="https://fonts.font.im/css?family=Nunito" rel="stylesheet">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Nunito', sans-serif;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            margin: 0 !important;
+            padding: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .contianer-fluid{
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        .collapse:not(.show) {
+            display: inline-block !important;
+        }
+
+        /*@media (min-device-width: 961px){}*/
+        /*    .nav-container {*/
+        /*        width: 100%;*/
+        /*        height: 73px;*/
+        /*    }*/
+
+        @media screen and (max-width:960px){
+            /* and (min-device-width:600px) */
+            html {font-size: 10px}
+            /*nav*/
+            .bg-light{
+                background-color: transparent !important;
+                border-bottom: 1px solid #D70202;
+            }
+
+            .nav-container{
+                width: 100%;
+                height:73px;
+                z-index: 5;
+
+            }
+
+            .nav-container ul{
+                display:flex;
+                width: 100%;
+                flex-direction:row;
+                flex-wrap: nowrap;
+                justify-content:flex-start;
+                height:73px;
+                /*border: 1px solid pink;*/
+                /* padding: 0 10%; */
+            }
+
+            .nav-container ul li{
+                list-style:none;
+                height:73px;
+                line-height:73px;
+                z-index: 5;
+                /*border: 1px solid seagreen;*/
+                /* width: 25%; */
+                /*margin: 0 auto;*/
+            }
+
+
+
+            .nav-dropdown svg{
+                /* display: inline-block; */
+                width: 60px;
+                height: 60px;
+                width: 8%;
+                margin-left: 10%;
+            }
+
+            .dropdown-toggle::after {
+                content: none;
+            }
+
+            .nav-link-adjust{
+                padding: 0;
+            }
+
+            .nav-link-adjust:hover{
+                color: #C4C4C4;
+            }
+
+            .navbar-light .navbar-nav .nav-link {
+                color: #D70202;
+            }
+
+            .nav-logo-adjust{
+                display: flex;
+                justify-content: left;
+                width: 60%;
+                /*vertical-align: center;*/
+            }
+
+            #nav-logo{
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593350278/template19/Avengers_hvxunu.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 108px;
+                margin-top: 18px;
+
+            }
+
+            .nav-right{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items:center;
+                width: 80%;
+            }
+            .nav-right button{
+                color: white;
+                background-color: #D70202;
+                width: 131px;
+                height: 59px;
+                border: none;
+                font-size: 16px;
+                line-height: 22px;
+                /* margin-left: 20%; */
+            }
+
+            .nav-right svg{
+                color: #D70202;
+                width: 30px;
+                height: 30px;
+                /* margin-left: 10%; */
+                vertical-align: center;
+                /*float: right;*/
+            }
+
+            .nav-position{
+                position: absolute;
+                width: 100%;
+                display: block;
+            }
+            /*nav*/
+
+            /*background img*/
+            .bg-img{
+                background-repeat: no-repeat;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593603375/template19/mobile500_500_x2mbno.png);
+                background-size: cover;
+                width: 300px;
+                height: 300px;
+                z-index: -1;
+                position:relative;
+                margin: 0 auto;
+                margin-top: 30%;
+                /* position: relative; */
+                /*height: 1000px;*/
+            }
+
+            .bg-container{
+                width: 100%;
+                z-index: 4;
+            }
+            /*background img*/
+
+            /*    homepage*/
+            /*    intro page*/
+            .intro-session{
+                position: relative;
+                width: 100%;
+
+                display: inline-block;
+            }
+
+            .bg-button{
+                /*position: absolute;*/
+                float:right;
+                /* display: inline-block; */
+                background-image: url("D://arrow_50_50.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 50px;
+                height: 50px;
+                margin-right: 5%;
+                /* margin-left: 85%;
+                margin-top: 50%; */
+            }
+
+
+            .intro-text-title{
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 65px;
+
+            }
+
+            .intro-text-title span{
+                color: #D70202;
+            }
+
+            .intro-text{
+                width: 70%;
+                position: relative;
+                /*height: 220px;*/
+                /* margin-top: -15%; */
+                margin: 0 auto;
+                /* marin-top: 20%; */
+
+                display:block;
+                margin-bottom: 10rem;
+            }
+
+            .intro-text-subtitle{
+                font-size: 16px;
+                line-height: 22px;
+                display:block;
+                margin-bottom: 6rem;
+            }
+
+            .intro-button-set{
+                /* margin-left: 15%; */
+                margin-top: 2%;
+                display:block;
+            }
+
+            .intro-button-set button{
+                border: 3px solid #D70202;
+                width: 246px;
+                height: 65px;
+                box-sizing: border-box;
+                font-size: 31px;
+                line-height: 42px;
+                font-weight: bold;
+                display:block;
+                margin-bottom: 10rem;
+                /*border: none;*/
+            }
+
+            .intro-button-preview{
+                color: white;
+                background: #D70202;
+                display:block;
+                margin:0 auto;
+                margin-bottom: 10rem;
+            }
+
+            .intro-button-download{
+                color: black;
+                border: #D70202 solid 2px;
+                background-color: transparent;
+                margin-top: 5%;
+                display:block;
+                margin:0 auto;
+                margin-bottom: 10rem;
+                /*margin-left: 29px;*/
+            }
+
+            .intro-logo-set{
+                /*border: 1px solid black;*/
+                width: 37%;
+                height: 28px;
+                margin-left: 14.5%;
+                margin-top: 110px;
+                margin-bottom: 80px;
+                display: none;
+            }
+
+            .intro-logo-set ul{
+                /*border: saddlebrown 1px solid;*/
+                /*width: 28px;*/
+                height: 28px;
+                /*width: 100%;*/
+                /*width: 36%;*/
+                display: flex;
+                flex-direction: row;
+                flex:1;
+                justify-content: center;
+                /*margin-left: 15%;*/
+            }
+
+            .intro-logo-set ul li{
+                width: 28px;
+                height: 28px;
+                margin: 0 13%;
+            }
+
+            .intro-logo-twitter{
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 28px;
+                height: 28px;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346407/template19/ant-design_twitter-circle-filled_ygkrz3.png);
+            }
+            .intro-logo-ig{
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 28px;
+                height: 28px;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346407/template19/ant-design_instagram-filled_f7lntx.png);
+            }
+            .intro-logo-basket{
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 28px;
+                height: 28px;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346407/template19/ant-design_dribbble-circle-filled_gc8nww.png);
+            }
+            .intro-logo-fb{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346401/template19/Vector_kcks2l.png);
+                width: 28px;
+                height: 28px;
+            }
+
+            .intro-bg-pink{
+                position: absolute;
+                float: right;
+                width: 150%;
+                height: 90%;
+                /* overflow:hidden !important; */
+                background-color: #F9DCDC;
+                background-size: cover;
+                z-index: -1;
+                transform: rotate(15deg);
+                margin-left: 30%;
+                border-radius: 100px;
+                /* translate: -550px,500px;    */
+            }
+
+            /*    intro page*/
+
+            /*    our version*/
+            .version-container{
+                width: 100%;
+                height: 100%;
+                overflow:hidden;
+                position:relative;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                background-size: cover;
+                /* display: block; */
+                background-color: rgba(158, 144, 144, 0.15);
+
+            }
+
+            .version-container>p{
+                font-size: 34px;
+                line-height: 49px;
+                margin-top: 74px;
+                text-align: center;
+                /* margin-left: 15%; */
+                /* margin-bottom: 71px; */
+                width: 100%;
+                font-weight: bold;
+                margin-bottom: 6rem;
+            }
+            .version-img{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346535/template19/Untitled_1_hy7etw.jpg);
+                background-repeat: no-repeat;
+                /*width: 100%;*/
+                /*height: 100%;*/
+                width: 436px;
+                /* margin-left: 15%; */
+                height: 381px;
+                display: block;
+                margin:0 auto;
+                /* float: center; */
+                /* margin-bottom: 191px; */
+                margin-bottom: 2rem;
+            }
+
+            .version-right{
+                width: 422px;
+                /* height: 165px; */
+                /* float: right; */
+                display: block;
+                width: 100%;
+            }
+
+            .version-right p {
+                font-size: 24px;
+                line-height: 33px;
+                display: block;
+                width: 422px;
+                text-align: left;
+                margin:0 auto;
+                margin-bottom: 2rem;
+            }
+
+            .version-right button{
+                width: 158px;
+                height: 42px;
+                background-color: transparent;
+                border:  2px solid #D70202;
+                color: #D70202;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 25px;
+                margin-top: 10%;
+                display: block;
+                z-index: 10;
+                margin:0 auto;
+                margin-bottom: 8rem;
+            }
+
+            .version-content{
+                /*float: right;*/
+            }
+            /*    our version*/
+
+            /*    explore template*/
+
+            .explore-container{
+                position: relative;
+                margin-bottom: 200px;
+
+            }
+
+            .explore-title{
+                font-size: 34px;
+                margin-top: 137px;
+
+                line-height: 49px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .explore-content p{
+                font-weight: bold;
+                font-size: 29px;
+                line-height: 49px;
+                margin-top: 109px;
+                text-align: center;
+            }
+
+            .explore-img{
+                display: flex;
+                flex-wrap: wrap;
+                flex: 1;
+                flex-direction: column;
+                margin-top: 98px;
+                /*margin-left: 13%;*/
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .explore-content button{
+                font-size: 24px;
+                line-height: 25px;
+                color: #D70202;
+                background-color: transparent;
+                border: 2px solid #D70202;
+                width: 200px;
+                height: 42px;
+                margin-left: 1065px;
+                margin-top: 53px;
+                display: block;
+                margin:0 auto;
+                margin-bottom: 6rem;
+                font-weight: bold;
+            }
+
+            /*    beauty*/
+            .explore-beauty-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Group_1_fjng1b.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin-bottom: 8rem;
+            }
+
+            .explore-beauty-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_36_zav7lt.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+
+                margin-bottom: 8rem;
+            }
+
+            /*    app landing*/
+            .explore-app-landing-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345863/template19/Rectangle_38_hqjk01.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+
+            .explore-app-landing-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_39_r4bejz.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+
+            /*    marketing*/
+            .explore-marketing-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_41_dntwo7.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+
+            .explore-marketing-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_39_r4bejz.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+
+            /*    portfolio*/
+
+            .explore-portfolio-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_44_h5bv1y.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+
+            .explore-portfolio-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_43_atdz9g.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+
+            /*    photography*/
+            .explore-photography-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_45_bjzmuo.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+
+            .explore-photography-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_46_qmiokq.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+
+            /*    fitness and gym*/
+            .explore-fitness-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_52_jovu7p.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+
+            .explore-fitness-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_53_g9pmi8.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+
+            /*    payment*/
+            .explore-payment-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_55_euwbo3.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+
+            .explore-payment-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_56_op5bvd.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                margin: 0 50px;
+                margin-bottom: 8rem;
+            }
+            /*    explore template*/
+
+            /*    why choose avengers*/
+            .why-choose-avenger{
+                background-color: rgba(215, 2, 2, 0.05);
+                /* height: 515px; */
+                padding: 132px 15%;
+            }
+
+            .why-choose-avenger-title{
+                font-weight: bold;
+                font-size: 29px;
+                line-height: 49px;
+                /*margin-left: 15%;*/
+            }
+
+            .why-choose-avenger-text{
+                font-size: 24px;
+                line-height: 33px;
+                margin-top: 50px;
+                justify-content: center;
+                display: block;
+                position: relative;
+                /*margin-left: 15%;*/
+            }
+            /*    why choose avengers*/
+
+            /*    tags*/
+            .tags >p{
+                margin-top: 175px;
+                margin-left: 15%;
+                font-weight: bold;
+                font-size: 34px;
+                line-height: 49px;
+            }
+
+            .tags table{
+                width: 85%;
+                margin-left: 15%;
+            }
+
+            .tags table tr td{
+                width: 33%;
+                font-size: 24px;
+                line-height: 33px;
+                padding: 33px 0;
+            }
+
+            .tags button{
+                border: none;
+                font-size: 24px;
+                line-height: 33px;
+                color: #D70202;
+                margin-left: 15%;
+                margin-top: 3%;
+            }
+            /*    tags*/
+
+            /*    join avenger*/
+            .join-avenger{
+                font-size: 24px;
+                line-height: 33px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 220px;
+                text-align: center;
+            }
+
+            .join-avenger button{
+                width: 300px;
+                height: 102px;
+                color: white;
+                background-color: #D70202;
+                display: block;
+                font-size: 24px;
+                line-height: 33px;
+                margin: 0 auto;
+                margin-top: 88px;
+                margin-bottom: 100px;
+
+            }
+            /*    join avenger*/
+
+            /*    footer*/
+            footer{
+                height: 394px;
+                background-color: #000513;
+                padding: 34px 0;
+            }
+
+            footer p{
+                color: white;
+
+            }
+
+            .footer-title{
+                font-size: 24px;
+                line-height: 33px;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .footer-input{
+
+                margin: 0 auto;
+                /*margin-top: 53px;*/
+                /*margin-left: auto;*/
+                /*margin-right: auto;*/
+                /*margin-bottom: 53px;*/
+            }
+
+            .footer-input input{
+                outline-style: none;
+                border: 3px solid #FFFFFF;
+                background-color: transparent;
+                /* width: 532px;
+                height: 70px; */
+                width: 80%;
+                height: 70px;
+                margin: 0 auto;
+                display: block;
+                margin-bottom: 2rem;
+                margin-left: auto;
+            }
+
+            .footer-input button{
+                font-size: 24px;
+                line-height: 33px;
+                color: white;
+                background-color: #D70202;
+                border: none;
+                width: 142px;
+                height: 70px;
+                margin: 0 auto;
+                display: block;
+                margin-bottom: 6rem;
+            }
+
+            .footer-email{
+                font-size: 24px;
+                line-height: 33px;
+                display: block;
+                margin-left: 10%;
+                margin-bottom: 2rem;
+            }
+            .copy-right{
+                text-align: center;
+                font-size: 24px;
+                line-height: 33px;
+            }
+            /*    footer*/
+        }
+
+
+
+        @media screen and (min-width:961px) {
+            /*nav*/
+            .bg-light{
+                background-color: transparent !important;
+                border-bottom: 1px solid #D70202;
+            }
+
+            .nav-container{
+                width: 100%;
+                height:73px;
+            }
+
+            .nav-container ul{
+                display:flex;
+                width: 100%;
+                flex-direction:row;
+                justify-content:center;
+                height:73px;
+                /*border: 1px solid pink;*/
+                padding: 0 10%;
+            }
+
+            .nav-container ul li{
+                list-style:none;
+                height:73px;
+                line-height:73px;
+                /*border: 1px solid seagreen;*/
+                width: 34%;
+                z-index: 5;
+                /*margin: 0 auto;*/
+            }
+
+            .nav-dropdown svg{
+                display: inline-block;
+                height: 8%;
+                width: 8%;
+            }
+
+            .dropdown-toggle::after {
+                content: none;
+            }
+
+            .nav-link-adjust{
+                padding: 0;
+
+            }
+
+            .nav-link-adjust:hover{
+                color: #C4C4C4;
+            }
+
+            .navbar-light .navbar-nav .nav-link {
+                color: #D70202;
+            }
+
+            .nav-logo-adjust{
+                display: flex;
+                justify-content: center;
+                /*vertical-align: center;*/
+            }
+
+            #nav-logo{
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593350278/template19/Avengers_hvxunu.png);
+                background-repeat: no-repeat;
+                background-size: auto;
+                width: 108px;
+                margin-top: 18px;
+                /*height: 50px;*/
+                /*margin: 0 50%;*/
+            }
+
+            .nav-right button{
+                color: white;
+                background-color: #D70202;
+                width: 131px;
+                height: 59px;
+                border: none;
+                font-size: 16px;
+                line-height: 22px;
+                margin-left: 20%;
+            }
+
+            .nav-right svg{
+                color: #D70202;
+                width: 30px;
+                height: 30px;
+                margin-left: 10%;
+                /*float: right;*/
+            }
+
+            .nav-position{
+                position: absolute;
+                width: 100%;
+                display: block;
+            }
+            /*nav*/
+
+
+            /*background img*/
+
+            /*    homepage*/
+            /*    intro page*/
+            .intro-session{
+                position: relative;
+                width: 100%;
+                display: inline-block;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+
+            }
+            /*background img*/
+            .bg-img-parent{
+                width: 100%;
+                padding-bottom: 62%;
+                z-index: -1;
+                position: absolute;
+            }
+            .bg-img{
+                background-repeat: repeat;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346408/template19/bg_qv96en.jpg);
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                /* height: 100%; */
+
+                position: absolute;
+                /* height: 1000px; */
+
+            }
+            .bg-button{
+                /*position: absolute;*/
+                display: inline-block;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593358074/template19/Untitled_2_lneayi.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 150px;
+                height: 150px;
+                margin-left: 85%;
+                margin-top: 315px;
+            }
+            .intro-text-title{
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 65px;
+                width: 55%;
+                display: inline-block;
+            }
+
+            .intro-text-title span{
+                color: #D70202;
+            }
+
+            .intro-text{
+                width: 70%;
+                height: 220px;
+                margin-top: -200px;
+                margin-left: 12%;
+                display: inline-block;
+            }
+
+            .intro-text-subtitle{
+                font-size: 16px;
+                line-height: 22px;
+                width: 60%;
+            }
+
+            .intro-button-set{
+                margin-left: 12%;
+                margin-top: 2%;
+            }
+
+            .intro-button-set button{
+                border: 3px solid #D70202;
+                width: 246px;
+                height: 65px;
+                box-sizing: border-box;
+                font-size: 31px;
+                line-height: 42px;
+                font-weight: bold;
+                display: inline-block;
+            }
+
+            .intro-button-preview{
+                color: white;
+                background: #D70202;
+            }
+
+            .intro-button-download{
+                color: black;
+                border: #D70202 solid 2px;
+                background-color: transparent;
+                margin-left: 29px;
+            }
+
+            .intro-logo-set{
+                width: 37%;
+                height: 28px;
+                margin-left: 12%;
+                margin-top: 110px;
+                margin-bottom: 10%;
+            }
+
+            .intro-logo-set ul{
+                /*border: saddlebrown 1px solid;*/
+                /*width: 28px;*/
+                height: 28px;
+                /*width: 100%;*/
+                /*width: 36%;*/
+                display: flex;
+                flex-direction: row;
+                flex:1;
+                justify-content: center;
+                /*margin-left: 15%;*/
+            }
+
+            .intro-logo-set ul li{
+                width: 28px;
+                height: 28px;
+                margin: 0 13%;
+            }
+
+            .intro-logo-twitter{
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 28px;
+                height: 28px;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346407/template19/ant-design_twitter-circle-filled_ygkrz3.png);
+            }
+            .intro-logo-ig{
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 28px;
+                height: 28px;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346407/template19/ant-design_instagram-filled_f7lntx.png);
+            }
+            .intro-logo-basket{
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 28px;
+                height: 28px;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346407/template19/ant-design_dribbble-circle-filled_gc8nww.png);
+            }
+            .intro-logo-fb{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346401/template19/Vector_kcks2l.png);
+                width: 28px;
+                height: 28px;
+            }
+
+            .intro-bg-pink{
+
+            }
+            /*    intro page*/
+
+            /*    our version*/
+            .version-container{
+                width: 100%;
+                height: 100%;
+                overflow:hidden;
+                position:relative;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                background-size: cover;
+                display: block;
+                background-color: rgba(158, 144, 144, 0.15);
+
+            }
+
+            .version-container>p{
+                font-size: 36px;
+                line-height: 49px;
+                margin-top: 74px;
+                margin-left: 12%;
+                margin-bottom: 71px;
+                font-weight: bold;
+            }
+            .version-content{
+                display: flex;
+                flex-wrap: wrap;
+                flex: 1;
+                flex-direction: row;
+                justify-content: space-around;
+                /*float: right;*/
+            }
+            .version-img{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346535/template19/Untitled_1_hy7etw.jpg);
+                background-repeat: no-repeat;
+                /*width: 100%;*/
+                /*height: 100%;*/
+                width: 436px;
+                height: 381px;
+                margin-bottom: 191px;
+            }
+
+            .version-text{
+                display: block;
+                /*position: relative;*/
+            }
+
+            .version-right{
+                width: 422px;
+                height: 165px;
+            }
+
+            .version-right p {
+                font-size: 24px;
+                line-height: 33px;
+            }
+
+            .version-right button{
+                width: 158px;
+                height: 42px;
+                background-color: transparent;
+                border:  2px solid #D70202;
+                color: #D70202;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 25px;
+                margin-top: 10%;
+
+            }
+
+
+            /*    our version*/
+
+            /*    explore template*/
+
+            .explore-container{
+                position: relative;
+                margin-bottom: 200px;
+
+            }
+
+            .explore-title{
+                font-size: 36px;
+                margin-top: 137px;
+                margin-left: 12%;
+                line-height: 49px;
+                font-weight: bold;
+
+            }
+
+            .explore-content p{
+                margin-left: 12%;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 49px;
+                margin-top: 109px;
+            }
+
+            .explore-img{
+                display: flex;
+                flex-wrap: wrap;
+                flex: 1;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-grow: 1;
+                margin-top: 98px;
+                /*margin-left: 13%;*/
+                /* justify-content: center; */
+            }
+
+            .explore-content button{
+                font-size: 18px;
+                line-height: 25px;
+                color: #D70202;
+                background-color: transparent;
+                border: 2px solid #D70202;
+                width: 158px;
+                height: 42px;
+                float:right;
+                margin-right: 12%;
+
+                margin-top: 53px;
+            }
+
+            /*    beauty*/
+            .explore-beauty-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Group_1_fjng1b.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin-left: 15%; */
+            }
+
+            .explore-beauty-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_36_zav7lt.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin-left: auto; */
+                /* margin-right: 15%; */
+            }
+
+            /*    app landing*/
+            .explore-app-landing-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345863/template19/Rectangle_38_hqjk01.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin-left: 15%; */
+            }
+
+            .explore-app-landing-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_39_r4bejz.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin: 0 100px; */
+            }
+
+            /*    marketing*/
+            .explore-marketing-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_41_dntwo7.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin-left: 15%; */
+            }
+
+            .explore-marketing-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_39_r4bejz.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin: 0 100px; */
+            }
+
+            /*    portfolio*/
+
+            .explore-portfolio-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_44_h5bv1y.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin-left: 15%; */
+            }
+
+            .explore-portfolio-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_43_atdz9g.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin: 0 100px; */
+            }
+
+            /*    photography*/
+            .explore-photography-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_45_bjzmuo.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin-left: 15%; */
+            }
+
+            .explore-photography-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_46_qmiokq.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin: 0 100px; */
+            }
+
+            /*    fitness and gym*/
+            .explore-fitness-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_52_jovu7p.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin-left: 15%; */
+            }
+
+            .explore-fitness-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_53_g9pmi8.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin: 0 100px; */
+            }
+
+            /*    payment*/
+            .explore-payment-left{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_55_euwbo3.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin-left: 15%; */
+            }
+
+            .explore-payment-right{
+                background-size: cover;
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_56_op5bvd.png);
+                background-repeat: no-repeat;
+                width: 453px;
+                height: 331px;
+                /* margin: 0 100px; */
+            }
+            /*    explore template*/
+
+            /*    why choose avengers*/
+            .why-choose-avenger{
+                background-color: rgba(215, 2, 2, 0.05);
+                height: 515px;
+                padding: 132px 15%;
+            }
+
+            .why-choose-avenger-title{
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 49px;
+                /*margin-left: 15%;*/
+            }
+
+            .why-choose-avenger-text{
+                font-size: 24px;
+                line-height: 33px;
+                margin-top: 50px;
+                justify-content: center;
+                display: block;
+                position: relative;
+                /*margin-left: 15%;*/
+            }
+            /*    why choose avengers*/
+
+            /*    tags*/
+            .tags >p{
+                margin-top: 175px;
+                margin-left: 15%;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 49px;
+            }
+
+            .tags table{
+                width: 85%;
+                margin-left: 15%;
+            }
+
+            .tags table tr td{
+                width: 33%;
+                font-size: 24px;
+                line-height: 33px;
+                padding: 33px 0;
+            }
+
+            .tags button{
+                border: none;
+                font-size: 24px;
+                line-height: 33px;
+                color: #D70202;
+                margin-left: 15%;
+                margin-top: 3%;
+            }
+            /*    tags*/
+
+            /*    join avenger*/
+            .join-avenger{
+                font-size: 24px;
+                line-height: 33px;
+                margin-left: 15%;
+                margin-top: 220px;
+            }
+
+            .join-avenger button{
+                width: 300px;
+                height: 102px;
+                color: white;
+                background-color: #D70202;
+                display: block;
+                font-size: 24px;
+                line-height: 33px;
+                margin-top: 88px;
+                margin-bottom: 246px;
+            }
+            /*    join avenger*/
+
+            /*    footer*/
+            footer{
+                height: 394px;
+                background-color: #000513;
+                padding: 36px 0;
+            }
+
+            footer p{
+                color: white;
+
+            }
+
+            .footer-title{
+                font-size: 24px;
+                line-height: 33px;
+                text-align: center;
+            }
+
+            .footer-input{
+                margin: 60px auto 70px auto;
+                padding-left:356px ;
+            }
+
+            .footer-input input{
+                outline-style: none;
+                border: 3px solid #FFFFFF;
+                background-color: transparent;
+                width: 532px;
+                height: 70px;
+                margin-right: 36px;
+            }
+
+            .footer-input button{
+                font-size: 24px;
+                line-height: 33px;
+                color: white;
+                background-color: #D70202;
+                border: none;
+                width: 142px;
+                height: 70px;
+            }
+
+            .footer-email{
+                font-size: 24px;
+                line-height: 33px;
+            }
+            .copy-right{
+                text-align: center;
+                font-size: 24px;
+                line-height: 33px;
+            }
+            /*    footer*/
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div >
+
+    <!--        nav-->
+    <!--    todo fill in the drop down list  and all hyper link-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-position">
+        <!--            <a class="navbar-brand" href="#">Navbar</a>-->
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> -->
+        <!--                        <span class="navbar-toggler-icon"></span>-->
+        <!-- </button> -->
+        <div class="collapse navbar-collapse nav-container" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <!---->
+                <li class="nav-item dropdown ">
+                    <a class="nav-link nav-link-adjust dropdown-toggle nav-dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Link1</a>
+                        <a class="dropdown-item" href="#">Link2</a>
+                        <a class="dropdown-item" href="#">Link3</a>
+                    </div>
+                </li>
+                <!---->
+                <li class="nav-logo-adjust">
+                    <div id="nav-logo"></div>
+                </li>
+                <!---->
+                <li class="nav-right">
+                    <button>
+                        Get Started
+                    </button>
+                    <svg width="1em" height="2em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                    </svg>
+                </li>
+                <!---->
+                <!--                    <li class="nav-item active">-->
+                <!--                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+                <!--                    </li>-->
+                <!--                    <li class="nav-item">-->
+                <!--                        <a class="nav-link" href="#">Features</a>-->
+                <!--                    </li>-->
+                <!--                    <li class="nav-item">-->
+                <!--                        <a class="nav-link" href="#">Pricing</a>-->
+                <!--                    </li>-->
+                <!---->
+            </ul>
+        </div>
+    </nav>
+    <!--    nav-->
+
+    <!--    content-->
+
+    <div class="bg-container">
+
+
+        <!--        todo link should be filled-->
+        <div class="intro-session ">
+            <!--    background img-->
+            <div class="intro-bg-pink"></div>
+            <div class="bg-img-parent">
+                <div class="bg-img"></div>
+            </div>
+
+            <a href="#"><div class="bg-button"></div></a>
+            <div class="intro-text">
+                <div class="intro-text-title">
+                    <p>Get Unlimited <span>templates</span><br> for Web Designs</p>
+                </div>
+
+                <p class="intro-text-subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+            <div class="intro-button-set">
+                <button class="intro-button-preview">Preview</button>
+                <button class="intro-button-download">Download</button>
+            </div>
+
+            <!--                todo fill in the link-->
+            <div class="intro-logo-set">
+                <ul>
+                    <li><a href="#"><div class="intro-logo-ig"></div></a></li>
+                    <li><a href="#"><div class="intro-logo-basket"></div></a></li>
+                    <li><a href="#"><div class="intro-logo-twitter"></div></a></li>
+                    <li><a href="#"><div class="intro-logo-fb"></div></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--    content-->
+
+    <!--    our version-->
+    <div class="version-container">
+        <p>Our Vision</p>
+        <div class="version-content">
+            <div class="version-img"></div>
+            <div class="version-right">
+                <p>We provide 7 sample layouts that you can use together or seperately in a project. and you get fully functional photographs used in your templates. Take a look.</p>
+                <button>View more</button>
+            </div>
+        </div>
+    </div>
+    <!--    our version-->
+
+    <!--    explore template-->
+    <div class="explore-container">
+        <div class="explore-title">
+            <p>EXPLORE TEMPLATES</p>
+        </div>
+
+        <!--        beauty-->
+        <div class="explore-content">
+            <p>Beauty</p>
+            <div class="explore-img">
+                <div class="explore-beauty-left"></div>
+                <div class="explore-beauty-right"></div>
+            </div>
+            <button>View Details</button>
+        </div>
+
+
+        <!--        app landing-->
+        <div class="explore-content">
+            <p>App Landing</p>
+            <div class="explore-img">
+                <div class="explore-app-landing-left"></div>
+                <div class="explore-app-landing-right"></div>
+            </div>
+            <button>View Details</button>
+        </div>
+
+        <!--        marketing-->
+        <div class="explore-content">
+            <p>Marketing</p>
+            <div class="explore-img">
+                <div class="explore-marketing-left"></div>
+                <div class="explore-marketing-right"></div>
+            </div>
+            <button>View Details</button>
+        </div>
+
+        <!--        portfolio-->
+        <div class="explore-content">
+            <p>Portfolio</p>
+            <div class="explore-img">
+                <div class="explore-portfolio-left"></div>
+                <div class="explore-portfolio-right"></div>
+            </div>
+            <button>View Details</button>
+        </div>
+
+        <!--        photography-->
+        <div class="explore-content">
+            <p>Photography</p>
+            <div class="explore-img">
+                <div class="explore-photography-left"></div>
+                <div class="explore-photography-right"></div>
+            </div>
+            <button>View Details</button>
+        </div>
+
+        <!--        fitness and gym-->
+        <div class="explore-content">
+            <p>Fitness and Gym</p>
+            <div class="explore-img">
+                <div class="explore-fitness-left"></div>
+                <div class="explore-fitness-right"></div>
+            </div>
+            <button>View Details</button>
+        </div>
+
+        <!--        payment-->
+        <div class="explore-content">
+            <p>Payment</p>
+            <div class="explore-img">
+                <div class="explore-payment-left"></div>
+                <div class="explore-payment-right"></div>
+            </div>
+            <button>View Details</button>
+        </div>
+
+    </div>
+    <!--    explore template-->
+
+    <!--    why choose avenger-->
+    <div class="why-choose-avenger">
+        <p class="why-choose-avenger-title">why choose Avengers</p>
+        <div class="why-choose-avenger-text">
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+                <br>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+    </div>
+    <!--    why choose avenger-->
+
+    <!--    tags-->
+    <div class="tags">
+        <p>Tags</p>
+        <table>
+            <tr>
+                <td>Photography and video</td>
+                <td>Technology</td>
+                <td>Marketing</td>
+            </tr>
+            <tr>
+                <td>Portfolio</td>
+                <td>Travel</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <td>Designer</td>
+                <td>One page</td>
+                <td>Fitness</td>
+            </tr>
+            <tr>
+                <td>Beauty</td>
+                <td>App landing</td>
+                <td>Agency</td>
+            </tr>
+        </table>
+        <button>See more</button>
+    </div>
+    <!--    tags-->
+
+    <!--    join avenger-->
+    <div class="join-avenger">
+        <p>JOIN AVENGERS</p>
+        <button>GET STARTED FOR FREE</button>
+    </div>
+    <!--    join avenger-->
+
+    <!--    footer-->
+    <footer>
+        <p class="footer-title">GET REAL TIME UPDATES</p>
+        <div class="footer-input">
+            <p class="footer-email">Email</p>
+            <input><button>Subscribe</button>
+        </div>
+        <p class="copy-right">@2020 Team Avengers</p>
+    </footer>
+    <!--    footer-->
+
+</div>
+
+</body>
+</html>
