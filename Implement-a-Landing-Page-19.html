@@ -45,9 +45,9 @@
 
         }
 
-        .collapse:not(.show) {
-            display: inline-block !important;
-        }
+        /*.collapse:not(.show) {*/
+        /*    display: inline-block !important;*/
+        /*}*/
 
         /*@media (min-device-width: 961px){}*/
         /*    .nav-container {*/
@@ -55,6 +55,8 @@
         /*        height: 73px;*/
         /*    }*/
 
+
+        /*mobile*/
         @media screen and (max-width:960px){
             /* and (min-device-width:600px) */
             html {font-size: 10px}
@@ -64,12 +66,32 @@
                 border-bottom: 1px solid #D70202;
             }
 
+            .nav-icon-mobile{
+                color: #D70202;
+            }
+
             .nav-container{
                 width: 100%;
                 height:73px;
                 z-index: 5;
 
             }
+
+            .navbar-toggler span{
+                color: #D70202;
+            }
+            /*.nav-logo-adjust-mobile{*/
+            /*    display: none;*/
+            /*}*/
+
+            /*.nav-logo-mobile{*/
+            /*    display: none;*/
+            /*}*/
+
+            /*.nav-right-mobile button{*/
+            /*    display: none;*/
+            /*}*/
+
 
             .nav-container ul{
                 display:flex;
@@ -80,6 +102,10 @@
                 height:73px;
                 /*border: 1px solid pink;*/
                 /* padding: 0 10%; */
+            }
+
+            .nav-item svg{
+                display: none;
             }
 
             .nav-container ul li{
@@ -118,44 +144,67 @@
                 color: #D70202;
             }
 
-            .nav-logo-adjust{
+            .nav-logo-adjust-mobile{
                 display: flex;
                 justify-content: left;
-                width: 60%;
+                /*width: 60%;*/
                 /*vertical-align: center;*/
             }
 
-            #nav-logo{
-                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593350278/template19/Avengers_hvxunu.png);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                width: 108px;
-                margin-top: 18px;
-
+            .navbar-toggler{
+                font-size: 2rem !important;
             }
 
+            .navbar-light .navbar-toggler span {
+                color: #D70202;
+                /*border-color: rgba(0,0,0,.1);*/
+            }
             .nav-right{
-                display: flex;
+                display: none;
+            }
+            .navbar {
+                padding: 0 1rem !important;
+            }
+            .nav-logo-mobile{
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593350278/template19/Avengers_hvxunu.png);
+                background-repeat: no-repeat;
+                background-size: auto;
+                width: 98px;
+                height: 42px;
+                /*margin-right: 150px;*/
+                margin-top: 18px;
+                /*height: 50px;*/
+                /*margin: 0 50%;*/
+            }
+            .navbar-light .navbar-toggler {
+                color: rgba(0,0,0,.5);
+                border-color:transparent;
+            }
+
+            .nav-right-mobile{
+                /*display: none;*/
                 flex-direction: row;
                 justify-content: space-around;
                 align-items:center;
-                width: 80%;
-            }
-            .nav-right button{
-                color: white;
-                background-color: #D70202;
-                width: 131px;
-                height: 59px;
-                border: none;
-                font-size: 16px;
-                line-height: 22px;
-                /* margin-left: 20%; */
+                /*width: 80%;*/
             }
 
-            .nav-right svg{
+            .nav-right-mobile button{
+                color: white;
+                background-color: #D70202;
+                width: 93px;
+                height: 39px;
+                border: none;
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+
+            .nav-item-mobile svg{
                 color: #D70202;
-                width: 30px;
-                height: 30px;
+                width: 15px;
+                height: 15px;
+                /*display: none;*/
                 /* margin-left: 10%; */
                 vertical-align: center;
                 /*float: right;*/
@@ -340,17 +389,19 @@
             }
 
             .intro-bg-pink{
+                margin-top: -70px;
                 position: absolute;
                 float: right;
-                width: 150%;
-                height: 90%;
+                width: 100%;
+                height: 100%;
                 /* overflow:hidden !important; */
-                background-color: #F9DCDC;
+                /*background-color: #F9DCDC;*/
+                background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593622017/Frame_1_1_copy_bpzuqs.png);
                 background-size: cover;
                 z-index: -1;
-                transform: rotate(15deg);
-                margin-left: 30%;
-                border-radius: 100px;
+                /*transform: rotate(15deg);*/
+                /*margin-left: 30%;*/
+                /*border-radius: 100px;*/
                 /* translate: -550px,500px;    */
             }
 
@@ -372,8 +423,8 @@
             }
 
             .version-container>p{
-                font-size: 34px;
-                line-height: 49px;
+                font-size: 29px;
+                line-height: 40px;
                 margin-top: 74px;
                 text-align: center;
                 /* margin-left: 15%; */
@@ -388,9 +439,8 @@
                 background-repeat: no-repeat;
                 /*width: 100%;*/
                 /*height: 100%;*/
-                width: 436px;
-                /* margin-left: 15%; */
-                height: 381px;
+                width: 317px;
+                height: 275px;
                 display: block;
                 margin:0 auto;
                 /* float: center; */
@@ -407,10 +457,10 @@
             }
 
             .version-right p {
-                font-size: 24px;
+                font-size: 16px;
                 line-height: 33px;
                 display: block;
-                width: 422px;
+                width: 80%;
                 text-align: left;
                 margin:0 auto;
                 margin-bottom: 2rem;
@@ -441,24 +491,23 @@
 
             .explore-container{
                 position: relative;
-                margin-bottom: 200px;
+                margin-bottom: 50px;
 
             }
 
             .explore-title{
-                font-size: 34px;
                 margin-top: 137px;
-
-                line-height: 49px;
+                font-size: 29px;
+                line-height: 40px;
                 font-weight: bold;
                 text-align: center;
             }
 
             .explore-content p{
-                font-weight: bold;
                 font-size: 29px;
-                line-height: 49px;
-                margin-top: 109px;
+                line-height: 40px;
+                font-weight: bold;
+                margin-top: 50px;
                 text-align: center;
             }
 
@@ -467,7 +516,7 @@
                 flex-wrap: wrap;
                 flex: 1;
                 flex-direction: column;
-                margin-top: 98px;
+                margin-top: 30px;
                 /*margin-left: 13%;*/
                 align-items: center;
                 justify-content: center;
@@ -495,19 +544,19 @@
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Group_1_fjng1b.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                margin-bottom: 3rem;
             }
 
             .explore-beauty-right{
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_36_zav7lt.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
+                width: 317px;
+                height: 231px;
 
-                margin-bottom: 8rem;
+                margin-bottom: 3rem;
             }
 
             /*    app landing*/
@@ -515,20 +564,20 @@
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345863/template19/Rectangle_38_hqjk01.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
 
             .explore-app-landing-right{
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_39_r4bejz.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
 
             /*    marketing*/
@@ -536,20 +585,20 @@
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_41_dntwo7.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
 
             .explore-marketing-right{
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_39_r4bejz.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
 
             /*    portfolio*/
@@ -558,20 +607,20 @@
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_44_h5bv1y.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
 
             .explore-portfolio-right{
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_43_atdz9g.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
 
             /*    photography*/
@@ -579,20 +628,20 @@
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_45_bjzmuo.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
 
             .explore-photography-right{
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345864/template19/Rectangle_46_qmiokq.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
 
             /*    fitness and gym*/
@@ -600,20 +649,20 @@
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_52_jovu7p.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
 
             .explore-fitness-right{
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_53_g9pmi8.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
 
             /*    payment*/
@@ -621,20 +670,20 @@
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_55_euwbo3.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
 
             .explore-payment-right{
                 background-size: cover;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593345865/template19/Rectangle_56_op5bvd.png);
                 background-repeat: no-repeat;
-                width: 453px;
-                height: 331px;
-                margin: 0 50px;
-                margin-bottom: 8rem;
+                width: 317px;
+                height: 231px;
+                /*margin: 0 50px;*/
+                margin-bottom: 3rem;
             }
             /*    explore template*/
 
@@ -642,22 +691,22 @@
             .why-choose-avenger{
                 background-color: rgba(215, 2, 2, 0.05);
                 /* height: 515px; */
-                padding: 132px 15%;
+                padding: 31px 5%;
             }
 
             .why-choose-avenger-title{
                 font-weight: bold;
                 font-size: 29px;
-                line-height: 49px;
+                line-height: 40px;
                 /*margin-left: 15%;*/
             }
 
             .why-choose-avenger-text{
-                font-size: 24px;
-                line-height: 33px;
+                font-size: 16px;
+                line-height: 22px;
                 margin-top: 50px;
                 justify-content: center;
-                display: block;
+                display: flex;
                 position: relative;
                 /*margin-left: 15%;*/
             }
@@ -665,32 +714,35 @@
 
             /*    tags*/
             .tags >p{
-                margin-top: 175px;
-                margin-left: 15%;
+                margin-top: 63px;
+                margin-left: 10%;
                 font-weight: bold;
-                font-size: 34px;
+                font-size: 36px;
                 line-height: 49px;
             }
 
             .tags table{
-                width: 85%;
-                margin-left: 15%;
+                /*width: 85%;*/
+                margin: 0 5% 0 10%;
             }
 
             .tags table tr td{
                 width: 33%;
-                font-size: 24px;
-                line-height: 33px;
-                padding: 33px 0;
+                font-size: 16px;
+                line-height: 22px;
+                padding: 20px 0;
+                text-align: left;
+                vertical-align: top;
             }
 
             .tags button{
                 border: none;
-                font-size: 24px;
-                line-height: 33px;
-                color: #D70202;
-                margin-left: 15%;
+                font-size: 16px;
+                line-height: 22px;
+                color: #D70202;;
+                margin-left: 10%;
                 margin-top: 3%;
+               background-color: transparent;
             }
             /*    tags*/
 
@@ -698,32 +750,34 @@
             .join-avenger{
                 font-size: 24px;
                 line-height: 33px;
-                display: block;
+                /*display: block;*/
                 margin: 0 auto;
                 margin-top: 220px;
                 text-align: center;
+                display: none;
             }
 
-            .join-avenger button{
-                width: 300px;
-                height: 102px;
-                color: white;
-                background-color: #D70202;
-                display: block;
-                font-size: 24px;
-                line-height: 33px;
-                margin: 0 auto;
-                margin-top: 88px;
-                margin-bottom: 100px;
+            /*.join-avenger button{*/
+            /*    width: 300px;*/
+            /*    height: 102px;*/
+            /*    color: white;*/
+            /*    background-color: #D70202;*/
+            /*    display: block;*/
+            /*    font-size: 24px;*/
+            /*    line-height: 33px;*/
+            /*    margin: 0 auto;*/
+            /*    margin-top: 88px;*/
+            /*    margin-bottom: 100px;*/
 
-            }
+            /*}*/
             /*    join avenger*/
 
             /*    footer*/
             footer{
-                height: 394px;
+                height: 310px;
                 background-color: #000513;
                 padding: 34px 0;
+                margin-top: 70px;
             }
 
             footer p{
@@ -732,14 +786,26 @@
             }
 
             .footer-title{
-                font-size: 24px;
-                line-height: 33px;
+                font-size: 16px;
+                line-height: 22px;
                 text-align: center;
                 margin-bottom: 2rem;
             }
 
+            .footer-input input::-webkit-input-placeholder {
+                /*color: #aab2bd;*/
+                font-size: 16px;
+                /*margin-left: 5px;*/
+                line-height: 22px;
+                padding-left: 10px;
+                padding-top: 5px;
+            }
+
             .footer-input{
 
+                /*padding-left: 5px;*/
+                /*font-size: 16px;*/
+                /*line-height: 22px;;*/
                 margin: 0 auto;
                 /*margin-top: 53px;*/
                 /*margin-left: auto;*/
@@ -753,22 +819,22 @@
                 background-color: transparent;
                 /* width: 532px;
                 height: 70px; */
-                width: 80%;
-                height: 70px;
                 margin: 0 auto;
                 display: block;
                 margin-bottom: 2rem;
                 margin-left: auto;
+                width: 315px;
+                height: 41.45px;
             }
 
             .footer-input button{
-                font-size: 24px;
-                line-height: 33px;
+                font-size: 16px;
+                line-height: 22px;
                 color: white;
                 background-color: #D70202;
                 border: none;
-                width: 142px;
-                height: 70px;
+                width: 121px;
+                height: 50px;
                 margin: 0 auto;
                 display: block;
                 margin-bottom: 6rem;
@@ -777,14 +843,15 @@
             .footer-email{
                 font-size: 24px;
                 line-height: 33px;
-                display: block;
+                /*display: block;*/
                 margin-left: 10%;
                 margin-bottom: 2rem;
+                display: none;
             }
             .copy-right{
                 text-align: center;
-                font-size: 24px;
-                line-height: 33px;
+                font-size: 16px;
+                line-height: 22px;
             }
             /*    footer*/
         }
@@ -802,7 +869,9 @@
                 width: 100%;
                 height:73px;
             }
-
+            .nav-top{
+                padding-top: 10px;
+            }
             .nav-container ul{
                 display:flex;
                 width: 100%;
@@ -813,6 +882,34 @@
                 padding: 0 10%;
             }
 
+            /*.nav-mobile{*/
+            /*    display: none;*/
+            /*}*/
+
+            .nav-logo-adjust-mobile{
+                display: none;
+            }
+
+            .nav-logo-mobile{
+                display: none;
+            }
+
+            .nav-right-mobile button{
+                display: none;
+            }
+
+            .nav-item-mobile{
+                display: none;
+            }
+
+
+            .navbar-expand-lg .navbar-collapse {
+                display: -ms-flexbox!important;
+                display: flex!important;
+                -ms-flex-preferred-size: auto;
+                justify-content: center;
+                flex-basis: auto;
+            }
             .nav-container ul li{
                 list-style:none;
                 height:73px;
@@ -852,11 +949,21 @@
                 /*vertical-align: center;*/
             }
 
-            #nav-logo{
+            .navbar-nav{
+                width: 93%;
+                margin-left: 7%;
+            }
+
+            .navbar-nav li{
+                margin: 0 3%;
+            }
+
+            .nav-logo{
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593350278/template19/Avengers_hvxunu.png);
                 background-repeat: no-repeat;
                 background-size: auto;
                 width: 108px;
+                margin-right: 150px;
                 margin-top: 18px;
                 /*height: 50px;*/
                 /*margin: 0 50%;*/
@@ -870,14 +977,15 @@
                 border: none;
                 font-size: 16px;
                 line-height: 22px;
-                margin-left: 20%;
+                /*margin-left: 20%;*/
             }
 
-            .nav-right svg{
+            .nav-item svg{
                 color: #D70202;
                 width: 30px;
                 height: 30px;
-                margin-left: 10%;
+                margin-top: 18px;
+                /*margin-left: 10%;*/
                 /*float: right;*/
             }
 
@@ -902,25 +1010,38 @@
 
             }
             /*background img*/
-            .bg-img-parent{
-                width: 100%;
-                padding-bottom: 62%;
-                z-index: -1;
-                position: absolute;
-            }
-            .bg-img{
+
+            .intro-bg-pink{
                 background-repeat: repeat;
                 background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346408/template19/bg_qv96en.jpg);
                 background-size: cover;
                 width: 100%;
                 height: 100%;
                 z-index: -1;
+                margin-top: -80px;
                 /* height: 100%; */
 
                 position: absolute;
-                /* height: 1000px; */
-
             }
+            .bg-img-parent{
+                width: 100%;
+                padding-bottom: 62%;
+                z-index: -1;
+                position: absolute;
+            }
+            /*.bg-img{*/
+            /*    background-repeat: repeat;*/
+            /*    background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593346408/template19/bg_qv96en.jpg);*/
+            /*    background-size: cover;*/
+            /*    width: 100%;*/
+            /*    height: 100%;*/
+            /*    z-index: -1;*/
+            /*    !* height: 100%; *!*/
+
+            /*    position: absolute;*/
+            /*    !* height: 1000px; *!*/
+
+            /*}*/
             .bg-button{
                 /*position: absolute;*/
                 display: inline-block;
@@ -945,7 +1066,7 @@
             }
 
             .intro-text{
-                width: 70%;
+                width: 80%;
                 height: 220px;
                 margin-top: -200px;
                 margin-left: 12%;
@@ -955,7 +1076,7 @@
             .intro-text-subtitle{
                 font-size: 16px;
                 line-height: 22px;
-                width: 60%;
+                width: 50%;
             }
 
             .intro-button-set{
@@ -1042,9 +1163,9 @@
                 height: 28px;
             }
 
-            .intro-bg-pink{
-
-            }
+            /*.intro-bg-pink{*/
+            /*    background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593622017/Frame_1_1_copy_bpzuqs.png);*/
+            /*}*/
             /*    intro page*/
 
             /*    our version*/
@@ -1360,6 +1481,8 @@
                 color: #D70202;
                 margin-left: 15%;
                 margin-top: 3%;
+                background-color: transparent;
+                margin-bottom: 15%;
             }
             /*    tags*/
 
@@ -1407,6 +1530,13 @@
                 padding-left:356px ;
             }
 
+            .footer-input input::-webkit-input-placeholder {
+                font-size: 24px;
+                line-height: 33px;
+                padding-left: 20px;
+                padding-top: 15px;
+            }
+
             .footer-input input{
                 outline-style: none;
                 border: 3px solid #FFFFFF;
@@ -1450,54 +1580,73 @@
     <!--        nav-->
     <!--    todo fill in the drop down list  and all hyper link-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-position">
-        <!--            <a class="navbar-brand" href="#">Navbar</a>-->
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> -->
-        <!--                        <span class="navbar-toggler-icon"></span>-->
-        <!-- </button> -->
-        <div class="collapse navbar-collapse nav-container" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <!---->
-                <li class="nav-item dropdown ">
-                    <a class="nav-link nav-link-adjust dropdown-toggle nav-dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+
+    <nav class="navbar-default navbar navbar-expand-lg navbar-light bg-light">
+<!--        <a class="navbar-brand" href="#">Navbar</a>-->
+<!--        <div class="nav-mobile">-->
+            <li class="nav-icon-mobile">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<!--                    <span class="navbar-toggler-icon">-->
+                    <span>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+  <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+
                         </svg>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Link1</a>
-                        <a class="dropdown-item" href="#">Link2</a>
-                        <a class="dropdown-item" href="#">Link3</a>
-                    </div>
+                    </span>
+                </button>
+            </li>
+            <li class="nav-item nav-logo-adjust-mobile">
+                <div class="nav-logo-mobile"></div>
+            </li>
+            <li class="nav-right-mobile">
+                <button>
+                    Get Started
+                </button>
+
+            </li>
+
+            <li class="nav-item-mobile">
+                <svg width="1em" height="2em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+            </li>
+<!--        </div>-->
+
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item nav-logo-adjust">
+                    <div class="nav-logo"></div>
                 </li>
-                <!---->
-                <li class="nav-logo-adjust">
-                    <div id="nav-logo"></div>
+                <li class="nav-item nav-top">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <!---->
+                <li class="nav-item nav-top">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item nav-top">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
                 <li class="nav-right">
                     <button>
                         Get Started
                     </button>
+
+                </li>
+
+                <li class="nav-item">
                     <svg width="1em" height="2em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
                         <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
                     </svg>
                 </li>
-                <!---->
-                <!--                    <li class="nav-item active">-->
-                <!--                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
-                <!--                    </li>-->
-                <!--                    <li class="nav-item">-->
-                <!--                        <a class="nav-link" href="#">Features</a>-->
-                <!--                    </li>-->
-                <!--                    <li class="nav-item">-->
-                <!--                        <a class="nav-link" href="#">Pricing</a>-->
-                <!--                    </li>-->
-                <!---->
             </ul>
         </div>
     </nav>
+
     <!--    nav-->
 
     <!--    content-->
@@ -1566,7 +1715,7 @@
                 <div class="explore-beauty-left"></div>
                 <div class="explore-beauty-right"></div>
             </div>
-            <button>View Details</button>
+            <button>View More</button>
         </div>
 
 
@@ -1577,7 +1726,7 @@
                 <div class="explore-app-landing-left"></div>
                 <div class="explore-app-landing-right"></div>
             </div>
-            <button>View Details</button>
+            <button>View More</button>
         </div>
 
         <!--        marketing-->
@@ -1587,7 +1736,7 @@
                 <div class="explore-marketing-left"></div>
                 <div class="explore-marketing-right"></div>
             </div>
-            <button>View Details</button>
+            <button>View More</button>
         </div>
 
         <!--        portfolio-->
@@ -1597,7 +1746,7 @@
                 <div class="explore-portfolio-left"></div>
                 <div class="explore-portfolio-right"></div>
             </div>
-            <button>View Details</button>
+            <button>View More</button>
         </div>
 
         <!--        photography-->
@@ -1607,7 +1756,7 @@
                 <div class="explore-photography-left"></div>
                 <div class="explore-photography-right"></div>
             </div>
-            <button>View Details</button>
+            <button>View More</button>
         </div>
 
         <!--        fitness and gym-->
@@ -1617,7 +1766,7 @@
                 <div class="explore-fitness-left"></div>
                 <div class="explore-fitness-right"></div>
             </div>
-            <button>View Details</button>
+            <button>View More</button>
         </div>
 
         <!--        payment-->
@@ -1627,7 +1776,7 @@
                 <div class="explore-payment-left"></div>
                 <div class="explore-payment-right"></div>
             </div>
-            <button>View Details</button>
+            <button>View More</button>
         </div>
 
     </div>
@@ -1676,18 +1825,18 @@
     <!--    tags-->
 
     <!--    join avenger-->
-    <div class="join-avenger">
-        <p>JOIN AVENGERS</p>
-        <button>GET STARTED FOR FREE</button>
-    </div>
+<!--    <div class="join-avenger">-->
+<!--        <p>JOIN AVENGERS</p>-->
+<!--        <button>GET STARTED FOR FREE</button>-->
+<!--    </div>-->
     <!--    join avenger-->
 
     <!--    footer-->
     <footer>
         <p class="footer-title">GET REAL TIME UPDATES</p>
         <div class="footer-input">
-            <p class="footer-email">Email</p>
-            <input><button>Subscribe</button>
+<!--            <p class="footer-email">Email</p>-->
+            <input placeholder="Email"><button>Subscribe</button>
         </div>
         <p class="copy-right">@2020 Team Avengers</p>
     </footer>
