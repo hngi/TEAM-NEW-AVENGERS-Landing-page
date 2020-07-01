@@ -167,6 +167,9 @@ html,body{
         height: auto;
         padding:10%;
     }
+    #brand-name{
+        font-size: 25px;
+    }
 }
 @media screen and (min-width: 992px){
     #main-nav{
