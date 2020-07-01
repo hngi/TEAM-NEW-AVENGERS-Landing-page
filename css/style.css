@@ -1,17 +1,38 @@
-html, body{
+body{
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-family: 'Nunito', sans-serif;
+  width: 100%;
+  
 }
+
 .nav-shadow{
   box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
   background-color: #fff;
+  
+  
+}
+.nav-shadow div a{
+  font-size: 1rem;
 }
 .nav-link-font{
   font-weight: 300;
+}
+.toggle-background{
+  background-color: #02BDE7;
+}
+
+#nav-button{
+  background-color: #02BDE7;
+  border-radius: 4px;
+  color: #fff;
+  border:1px solid #02BDE7;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2rem;
+  letter-spacing: 1px;
 }
 .button-style{
   font-weight: 600;
@@ -21,8 +42,19 @@ html, body{
   color: #fff;
   width: 9rem;
   font-size: 1.5rem;
+
 }
-.button-style:hover{
+.button-style-2{
+  font-weight: 600;
+  background-color: #02BDE7;
+  border-radius: 4px;
+  border:1px solid #02BDE7;
+  color: #fff;
+  width: 6rem;
+  font-size: 0.8rem;
+
+}
+.button-style:hover, .button-style-2:hover, .header-button-style:hover, .active-area button:hover, .button-footer:hover{
   background-color: #fff;
   color: #02BDE7;
   border:1px solid #02BDE7;
@@ -31,43 +63,51 @@ html, body{
 
 .jumbotron-height {
   background-color: #F6F8FE;
+  padding: 6rem 2.2rem 0 2rem;
+ 
 }
- .font-of-heading{
-   font-size: 4.5rem;
-font-style: normal;
-font-weight: bold;
-
-line-height: 5.5rem;
- }
+.font-of-heading{
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  color: #222;
+}
 .heading-paragraph{
-font-style: normal;
-word-wrap: normal;
-font-size: 2.25rem;
-line-height: 3.2rem;
-animation-name: lightSpeedOutLeft;
-animation-duration: 4s;
-animation-iteration-count: 3;
-animation-timing-function: ease-in;
-animation-fill-mode: backwards;
-}
-.text-of-card{
   font-size: 1.5rem;
   line-height: 2.1rem;
+  letter-spacing: 0.3px;
+  font-style: normal;
+ word-wrap: normal;
+ color: #838383;
+ animation-name: lightSpeedOutLeft;
+ animation-duration: 4s;
+ animation-iteration-count: 3;
+ animation-timing-function: ease-in;
+ animation-fill-mode: backwards;
+}
+section{
+  overflow-x: hidden;
+}
+
+.slide{
+  box-shadow: 0px 3px 25p rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+.text-of-card{
+  font-size: 1.1rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
   color: #222222;
 }
 
 .header-button-style{
-  
   font-weight: 600;
   background-color: #fff;
   border-radius: 4px;
   border:1px solid #02BDE7;
   color: #02BDE7;
-}
-.header-button-style:hover{
-  background-color: #02BDE7;
-  color: #fff;
-  border:1px solid #02BDE7;
 }
 .active-area{
   background: rgba(0, 0, 0, 0.75);
@@ -78,28 +118,40 @@ animation-fill-mode: backwards;
 .active-area:hover{
   opacity: 1;
 }
-.active-img-area:hover{
-   
-    
+/* .active-img-area:hover{    
     -webkit-filter: blur(2px);
     filter: blur(2px);
+  } */
+  .active-area button{
+    font-size: 0.9rem;
+    width: 9rem;
+    font-weight: 600;
+    background-color: #02BDE7;
+    border-radius: 4px;
+    border:1px solid #02BDE7;
+    color: #fff;
   }
-   .icons-temp{
-     background-color:#F6F8FE;
-   }
-   
-
-
- .underline-style{
+  .active-area p{
+  font-style: normal;
+font-weight: 600;
+font-size: 1.5rem;
+line-height: 3.1rem;
+color: #fff;
+letter-spacing: 0.5px;
+  }
+.icons-temp{
+background-color:#F6F8FE;
+}
+.underline-style{
 font-style: normal;
 font-weight: 600;
-font-size: 2.25rem;
+font-size: 1.5rem;
 line-height: 3.1rem;
-    color: #222222;
- }
- 
- 
- .footer-styles{
+color: #222222;
+margin-left: 2.9rem;
+}
+
+.footer-styles{
   background-color: rgba(23, 70, 207, 0.9);
  }
  .footer-bottom{
@@ -107,37 +159,17 @@ line-height: 3.1rem;
    font-size: 0.8rem;
  }
 .image-size{
-  width: 5rem;
+  width: 3rem;
+  
+
   
 }
 .testing{
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   background-color:#F6F8FE;
   border-radius: 50%;
 }
- @media (max-width: 576px) { 
-  .font-of-heading{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .heading-paragraph{
-    font-size: 0.7rem;
-    line-height: 1rem;
-  }
-  .jumbotron-height {
-    height: auto;
-  }
-  .underline-style{
-    
- font-size: 1.5rem;
- line-height: 3.1rem;
-  }
-  .text-of-card{
-    font-size: 1.1rem;
-  }
-  
- }
 
 footer h5{
   padding-left: 3%;
@@ -145,7 +177,6 @@ footer h5{
   text-transform: uppercase;
   font-size: 1.5rem;
   line-height: 3rem;
- 
 } 
 footer p{
   padding-left: 3%;
@@ -170,13 +201,21 @@ footer p{
   opacity: 0.9;
   z-index: 0;
 }
- .footer-image{
+.footer-image{
    background-image: url('footer.png');
    background-position: center;
    background-size: cover;
    position: relative;
  }
+.button-footer{
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: #02BDE7;
+  border-radius: 4px;
+  border:1px solid #02BDE7;
+  color: #fff;
 
+}
  .common-underline{
    border-bottom: 5px solid #02BDE7;
    width: 7%;
@@ -191,14 +230,26 @@ footer p{
 }
 
 .template-features{
-  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
 }
+@media (min-width: 576px) { 
+  
+  .jumbotron-height {
+    height: auto;
+    font-size: 2.25rem;
+  }
+ 
+  
+  
+ }
 
- @media (max-width: 768px) { 
+ @media (min-width: 768px) { 
   .font-of-heading{
     font-size: 2rem;
     line-height: 3rem;
+   
   }
   .heading-paragraph{
     font-size: 1rem;
@@ -210,23 +261,8 @@ footer p{
   }
   
   }
-  @media (min-width:992px){
-  footer h5{
-    padding-left: 27%;
-    padding-right: 27%;
-    text-transform: uppercase;
-    font-size: 2.25rem;
-    line-height: 3rem;
-   
-  } 
-  footer p{
-    padding-left: 27%;
-    padding-right: 27%;
-    font-size: 1.1rem;
-    line-height: 1.6rem;
-  }
-}
-  @media (max-width: 992px) { 
+  
+  @media (min-width: 992px) { 
     .font-of-heading{
       font-size: 2.5rem;
       line-height: 4rem;
@@ -235,6 +271,59 @@ footer p{
       font-size: 2rem;
       line-height: 2.5rem;
     }
+    footer h5{
+      padding-left: 27%;
+      padding-right: 27%;
+      text-transform: uppercase;
+      font-size: 2.25rem;
+      line-height: 3rem;
+     
+    } 
+    footer p{
+      padding-left: 27%;
+      padding-right: 27%;
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+    }
+
+    .underline-style, .common-underline-2{
+      font-size: 2.25rem;
+      line-height: 3.1rem;
+      margin-left: 3.8rem;
+    }
     
+    .text-of-card{
+      font-size: 1.5rem;
+    }
+.testing{
+  width: 10rem;
+  height: 10rem;
+}
+
+.image-size{
+  width: 5rem;
+}
+
+.template-features{
+  /* padding-left: 15rem;
+  padding-right: 5rem; */
+
+}
     
   }
+
+  @media (min-width: 1200px) { 
+    .font-of-heading{
+      font-size: 4.5rem;
+   
+   line-height: 5.5rem;
+  
+    }
+   .heading-paragraph{
+   
+   font-size: 2.25rem;
+   line-height: 3.2rem;
+   
+   }
+   
+   }
