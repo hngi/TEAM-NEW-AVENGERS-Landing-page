@@ -191,7 +191,6 @@ h1{
 /* HEADER STYLE */
 .bk-1{
     position: absolute;
-    padding-top: 4rem;
     width: 100vw;
     height: 92.5vh;
     background: url('../img/Group\ 33.png') no-repeat center center/cover;
@@ -220,6 +219,10 @@ nav{
     font-family: "Nunito Sans";
 }
 
+.navbar-nav{
+    padding-right: 1.5rem;
+}
+
 .nav-item{
     padding: 0 1rem;
 }
@@ -240,6 +243,12 @@ nav{
     color: var(--text-color) !important;
 }
 
+.nav-link--button{
+    margin-right: 7rem;
+}
+
+
+/* HERO SECTION  */
 .hero{
     text-align: center;
 }
