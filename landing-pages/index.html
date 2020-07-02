@@ -9,7 +9,7 @@
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!------Google Fonts----->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">sss
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     <!-------Michael's Snik Animate on scroll----->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -18,7 +18,7 @@
     <body data-spy="scroll" data-target="#main-nav">
       <div class="container poppins-font">
           <!----------------------Navbar------------------->
-          <nav id="main-nav"class="navbar fixed-top navbar-expand-lg  navbar-light bg-white border-bottom poppins-font">
+          <nav id="main-nav"class="navbar navbar-custom fixed-top navbar-expand-lg  navbar-light bg-white border-bottom poppins-font">
             <a id="navbar-logo" class="navbar-brand" href="index.html">
             <h1 id="brand-name" class="bold text-blue uppercase">Avengers</h1>
               </a>
@@ -29,13 +29,13 @@
                 
               <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a id="h-link" class="nav-item nav-link  active" href="#hero-grid">Templates</a>
+                    <a class="nav-item nav-link" href="#hero-grid">Templates</a>
                 </li>
                 <li class="nav-item">
-                    <a id="as-link" class="nav-link" href="#about-us">Features</a>
+                    <a class="nav-link" href="#about-us">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a id="os-link" class="nav-link" href="#our-services">Reviews</a>
+                    <a class="nav-link" href="#our-services">Reviews</a>
                 </li>
              
               </ul>
@@ -54,18 +54,21 @@
                     <button id="hero-btn" class="blue-btn drop-shadow">Book now</button>
                 </div>
                 <div id="hero-img">
-
+                  <img class="side-img" src="../images/hero-img.png" loading="lazy">
                 </div>
             </div>
         </header>
+      </div>
         <!--------Supported Tech Stack-------->
-        <div id="stack-section" class="">
+        <div id="stack-section" class="container-fluid drop-shadow">
           <img class="side-img" src="../images/support-img1.png" loading="lazy">
           <img class="side-img" src="../images/support-img2.png" loading="lazy">
           <img class="side-img" src="../images/support-img3.png" loading="lazy">
           <img class="side-img" src="../images/support-img4.png" loading="lazy">
           <img class="side-img" src="../images/support-img5.png" loading="lazy">
         </div>
+
+        <div class="container">
         <!---------New Templates--------->
         <section class="top-margin">
           <h2 class="text-center uppercase bold">New Templates</h2>
@@ -321,8 +324,8 @@
               <button class="blue-btn drop-shadow uppercase bold">Download Now</button>     
             </div>
           </section>
-         
-      </div>
+          </div>
+      
        <!-----------Footer-------------->
        <footer class="top-margin" id="footer-section">
         <div class="container">
