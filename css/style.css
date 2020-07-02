@@ -492,6 +492,15 @@ footer .row{
 
 /* MOBILE STLYE  */
 @media (max-width: 576px){
+    .navbar-collapse{
+        background: var(--secondary-color) !important;
+        padding: 2rem 1rem;
+    }
+    
+    .nav-item a{
+        padding: 2rem 0;
+        color: var(--text-color) !important;
+    }
 
     .btn{
         height: 53px !important;
