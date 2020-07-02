@@ -32,6 +32,9 @@
     --primary-color: #EC7A00;
     --secondary-color: #ffffff;
     --text-color: #0E0F10;
+    --title-color: #141414;
+    --caption-color: #979797;
+    --card-color: #F5F5F5;
 }
 
 .btn-primary{  
@@ -66,6 +69,80 @@
     color:var(--secondary-color) !important;
 }
 
+.demo-img{
+    border-radius: 4px;
+    width: 380px;
+    height: 280px;
+}
+
+.caption{
+    color: var(--caption-color);
+    font-size: 1.2rem;
+}
+
+.checker{
+    border: 2px var(--primary-color) solid;
+}
+
+.hr-dark{
+    margin: auto;
+    width: 12rem;
+    height: 0.4rem;
+    background: var(--text-color);
+}
+
+.hr-primary{
+    margin: auto;
+    width: 12rem;
+    height: 0.4rem;
+    background: var(--primary-color);
+}
+
+.hr-primary-left{
+    width: 12rem;
+    height: 0.4rem;
+    background: var(--primary-color);
+}
+.hr-dark-left{
+    width: 12rem;
+    height: 0.4rem;
+    background: var(--text-color);
+}
+
+/* .hr-primary-right{
+    display: flex;
+    justify-self: flex-end;
+    width: 12rem;
+    height: 0.4rem;
+    background: var(--primary-color);
+}
+.hr-dark-left{
+    width: 12rem;
+    height: 0.4rem;
+    background: var(--text-color);
+} */
+
+.feature-img{
+    max-width: 6rem;
+}
+
+.title{
+    margin-top: 1rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+
+.py-1{padding-top: 1rem;}
+.py-2{padding-top: 2rem;}
+.py-3{padding-top: 3rem;}
+.py-4{padding-top: 4rem;}
+.py-5{padding-top: 5rem;}
+.py-6{padding-top: 6rem;}
+
+
+/* DESKTOP ONLY STYLE COMPONENTS  */
 @media (min-width: 578px){
     .mobile{
         display: none;
@@ -84,11 +161,27 @@ header{
 
 a{
     color: var(--secondary-color) !important;
+    text-decoration: none !important;
 }
 
 main{
     background: var(--text-color);
+    padding-top: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+    margin: auto;
 }
+
+li{
+    list-style: none;
+}
+
+h1{
+    text-align: center;
+    line-height: 4rem;
+}
+
 
 /* HEADER STYLE */
 /* .template-img{
@@ -146,19 +239,227 @@ main{
 }
 
 .hero button{
-    padding: 1rem 2rem;
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    margin-bottom: 13rem;
-}
-
-main .row{
-    text-align: center;
+    padding: 1rem 2rem !important;
+    font-size: 1.25rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 13rem !important;
 }
 
 main .row h1{
-    margin-top: 6rem;
+    text-align: center;
 }
+
+.demo-section{
+   display: flex;
+   justify-content: space-around;
+}
+
+.demo-section .new-tag{
+    margin-right: 2rem;
+    position: relative;
+}
+
+.demo-section .new-tag p{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    float: right;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    z-index: 5;
+}
+
+.new-demo .demo-section .demo-img{
+    margin-top: -2rem;
+    /* z-index: -2; */
+}
+.section p{
+    margin: 1rem;
+}
+
+/* COLLECTION STYLE  */
+.collection{
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.collection h1{
+    padding-top: 0.75rem;
+}
+
+.categories-img {
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.category-header{
+    margin: auto;
+    text-align: center;
+}
+
+.category-header ul li a{
+    color: var(--caption-color) !important;
+}
+
+.category-header ul li a:hover{
+    color: var(--primary-color) !important;
+}
+
+.category-header ul li a.current{
+    color: var(--primary-color) !important;
+}
+
+.template-feature{
+    padding: 5rem 0px;
+}
+
+.template-feature .key-feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.template-pages{
+    text-align: center;
+}
+.template-pages .btn{
+    width: 10rem;
+    height: 3.6rem;
+}
+
+
+.about{
+    background: url("../img/Rectangle\ 21.png") no-repeat center center/cover,
+    url("../img/Rectangle\ 21-1.png") no-repeat center center/cover;
+    padding-bottom: 6rem;
+}
+
+.about .right-side {
+    padding-top: 10rem;
+    overflow: hidden;
+    margin-left: 5rem;
+}
+
+.right-side .row{
+    display: flex;
+    align-items: center;
+}
+
+.right-side .row h1{
+    color: var(--text-color) !important;
+    text-align: left !important;
+}
+
+.right-side .row p{
+    color: var(--text-color) !important;
+    text-align: left !important;
+    font-size: 1.15rem;
+}
+
+.right-side .row img{
+    padding-right: -5rem;
+    overflow: hidden;
+}
+
+.about .left-side {
+    padding-top: 10rem;
+    overflow: hidden;
+    margin-right: 5rem;
+}
+
+.left-side .row{
+    display: flex;
+    align-items: center;
+}
+
+.left-side .row .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right !important;
+}
+
+.left-side .row h1{
+    color: var(--text-color) !important;
+    text-align: right !important;
+}
+
+.left-side .row p{
+    color: var(--text-color) !important;
+    text-align: right !important;
+    font-size: 1.15rem;
+}
+
+.left-side .row img{
+    padding-left: -5rem;
+    overflow: hidden;
+}
+
+.about .about-img{
+    max-width: 100%;
+}
+
+#customer-section{
+    background: var(--text-color);
+    padding: 6rem 0;
+}
+
+#customer-section img{
+    width: 100%;
+    margin: 4rem 0;
+}
+
+#customer-section .testimonial{
+    margin-top: 4rem;
+}
+
+#customer-section .card{
+    background: var(--card-color);
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#customer-section .testimonial .card img{
+    max-width: 6rem;
+    margin: 0;
+}
+
+#customer-section .testimonial .card p{
+    padding: 2rem 0;
+}
+
+#contact .contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact .contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* FOOTER STYLE  */
+footer{
+    background: url("../img/Rectangle\ 23.png");
+    padding: 6rem 0;
+}
+footer .row{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+
 
 /* MOBILE STLYE  */
 @media (max-width: 576px){
