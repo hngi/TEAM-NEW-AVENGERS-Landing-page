@@ -6,8 +6,12 @@ a {
   color: black;
 }
 
-.navbar {
+.navbar, .jumbotron {
   box-shadow: 0px 1.64301px 1.64301px rgba(0, 0, 0, 0.25);
+}
+
+.card-img-top {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .navbar-brand {
@@ -39,26 +43,7 @@ a {
 .border-bottom {
     border-bottom: 1px solid rgba(0, 0, 0, 0.548)!important;
 }
-.card-title {
-  font-size: 12.4123px;
-  line-height: 14px;
-  color: #000000;
-}
-.card-content {
-  font-size: 10.5532px;
-  line-height: 12px;
-  color: #6a6666;
-}
 
-.feature {
-  background-color: #eceaea;
-}
-
-p.disclaimer {
-  font-weight: 500 !important;
-  font-size: 10.30194px !important;
-  line-height: 12px !important;
-}
 
 @media (min-width: 992px) {
     .top-text h2 {
@@ -115,5 +100,6 @@ p.disclaimer {
   .footer-text, .footer-text p {
       color: #FF1D72!important;
       font-family: 'Source Sans Pro', sans-serif;
+      font-size: small;
   }
 }
