@@ -98,6 +98,10 @@
     font-size: 1.2rem;
 }
 
+.checker{
+    border: 2px var(--primary-color) solid;
+}
+
 .hr-dark{
     margin: auto;
     width: 12rem;
@@ -185,6 +189,18 @@ h1{
 
 
 /* HEADER STYLE */
+.bk-1{
+    position: absolute;
+    width: 100vw;
+    height: 92.5vh;
+    background: url('../img/Group\ 33.png') no-repeat center center/cover;
+    z-index: 1;
+}
+
+nav{
+    z-index: 5;
+}
+
 .navbar{
     padding-top: 2rem;
 }
@@ -242,6 +258,7 @@ h1{
 
 
 /* MAIN SECTION */
+
 /* LATEST DEMO STYLE  */
 main .row h1{
     text-align: center;
@@ -473,6 +490,22 @@ footer .row{
 
 /* MOBILE STLYE  */
 @media (max-width: 576px){
+    header{
+        position: relative;
+        overflow: hidden;
+    }
+    .bk-1{
+        position: absolute;
+        padding-top: 20rem;
+        padding-left: 13rem;
+        padding-right: 15rem;
+        margin-top: 490px;
+        width: 65px;
+        height: 100px;
+        background: url('../img/Component\ 1.png') no-repeat center center/cover;
+        z-index: 1;
+    }
+
     .navbar-collapse{
         background: var(--secondary-color) !important;
         padding: 2rem 1rem;
@@ -509,7 +542,9 @@ footer .row{
         color: var(--secondary-color);
     }
     .hero{
+        position: relative;
         text-align: center;
+        z-index: 5 !important;
     }
     
     .hero h1{
