@@ -195,7 +195,7 @@ html,body{
 @media screen and (min-width: 992px){
     #main-nav{
         padding-right: 11%;
-        padding-left: 11%;
+        padding-left: 9%;
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -207,6 +207,21 @@ html,body{
     }
    
 }
+@media screen and (min-width: 541px) and (max-width: 992px){
+    #main-nav{
+        padding-right: 5.5%;
+        padding-left: 5.5%;
+        padding-top: 10px;
+    
+    }
+    
+        #hero-section{
+         margin-top: 20%;
+        
+        }
+
+}
+
 @media screen and (min-width: 993px) and (max-width: 1240px){
     #main-nav{
         padding-right: 5.5%;
