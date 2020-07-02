@@ -191,10 +191,11 @@ h1{
 /* HEADER STYLE */
 .bk-1{
     position: absolute;
+    padding-top: 4rem;
     width: 100vw;
     height: 92.5vh;
     background: url('../img/Group\ 33.png') no-repeat center center/cover;
-    z-index: 1;
+    z-index: 1; 
 }
 
 nav{
@@ -496,7 +497,7 @@ footer .row{
     }
     .bk-1{
         position: absolute;
-        padding-top: 20rem;
+        padding-top: 30rem;
         padding-left: 13rem;
         padding-right: 15rem;
         margin-top: 490px;
