@@ -1,0 +1,1761 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav-bar{
+    padding: .5rem 1rem 0 1rem !important;
+}
+
+/*mobile*/
+@media screen and (max-width:960px){
+    /*nav*/
+    .bg-light{
+        background-color: transparent !important;
+        /*border-bottom: 1px solid #D70202;*/
+    }
+
+    .nav-icon-mobile{
+        /*color: #D70202;*/
+    }
+
+    .nav-container{
+        width: 100%;
+        height:73px;
+        z-index: 5;
+
+    }
+
+    nav{
+        height: 55px;
+    }
+
+    .navbar-toggler span{
+        /*color: #D70202;*/
+    }
+    /*.nav-logo-adjust-mobile{*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.nav-logo-mobile{*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.nav-right-mobile button{*/
+    /*    display: none;*/
+    /*}*/
+
+
+    .nav-container ul{
+        display:flex;
+        width: 100%;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        justify-content:flex-start;
+        height:73px;
+        /*border: 1px solid pink;*/
+        /* padding: 0 10%; */
+    }
+
+    .nav-item svg{
+        display: none;
+    }
+
+    .nav-container ul li{
+        list-style:none;
+        height:73px;
+        line-height:73px;
+        z-index: 5;
+        /*border: 1px solid seagreen;*/
+        /* width: 25%; */
+        /*margin: 0 auto;*/
+    }
+
+
+
+    .nav-dropdown svg{
+        /* display: inline-block; */
+        width: 60px;
+        height: 60px;
+        width: 8%;
+        margin-left: 10%;
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .nav-link-adjust{
+        padding: 0;
+    }
+
+    .nav-link-adjust:hover{
+        color: #C4C4C4;
+    }
+
+
+
+    .navbar-toggler{
+        font-size: 2rem !important;
+    }
+
+
+    .navbar {
+        padding: 0 1rem !important;
+    }
+
+    .nav-logo-mobile{
+        background-repeat: no-repeat;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593678791/lading%20page/Frame_1_2_me4gpa.png);
+        background-size: auto;
+        width: 134px;
+        height: 42px;
+        /*margin-right: 150px;*/
+        margin-top: 18px;
+        /*height: 50px;*/
+        /*margin: 0 50%;*/
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.5);
+        border-color:transparent;
+    }
+
+    .nav-right-mobile{
+        /*display: none;*/
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+        /*width: 80%;*/
+    }
+
+    .nav-top a{
+        color: black;
+    }
+
+
+    .nav-position{
+        position: absolute;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-right button{
+        display: none;
+    }
+    /*nav*/
+
+
+    /*    banner*/
+    .banner-container{
+        position: relative;
+        /*height: 650px;*/
+        width: 100%;
+        height: 430px;
+        background-color: #1746CF;
+        z-index: -1;
+
+        /*text-align: center;*/
+    }
+
+    .banner{
+        position: relative;
+    }
+
+    .banner-title{
+        padding-top: 50px;
+        /*margin-top: 194px;*/
+        font-weight: bold;
+        font-size: 21px;
+        color: white;
+        width: 70%;
+        margin: 20px auto 0 auto;
+        text-align: center;
+    }
+
+    .banner-subtitle{
+        font-weight: normal;
+        font-size: 16px;
+        color: white;
+        width:75%;
+        line-height: 30px;
+        margin: 8% auto 0 auto;
+        text-align: justify;
+    }
+
+    .banner-btn-set{
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .banner-btn-demo{
+        width: 144px;
+        height: 38px;
+        background-color: white;
+        color: #1746CF;
+        font-size: 13px;
+        /*line-height: 45px;*/
+        /*line-height: 80px;*/
+        border: none;
+        margin-right: 1%;
+    }
+
+    .banner-btn-download{
+        width: 144px;
+        height: 38px;
+        border: 2px solid white;
+        color: white;
+        font-weight: 600;
+        font-size: 13px;
+        background-color: transparent;
+        margin-left: 1%;
+        /*line-height: 80px;*/
+    }
+    /*    banner*/
+
+    .explore-container{
+        position: relative;
+        width: 100%;
+        height: 50%;
+        padding-top: 50px;
+        margin: 0 auto 50px auto;
+        /*padding-left: 133px;*/
+        /*padding-top: 80%;*/
+    }
+
+    .explore-title{
+        text-align: center;
+        /*border: 1px solid greenyellow;*/
+        /*width: 34%;*/
+    }
+
+    .explore-title p{
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        margin-bottom: 0 !important;
+    }
+    .explore-line{
+        border-bottom: 3px solid #1746CF;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .explore-subtitle{
+        display: none;
+    }
+
+    /*    explore*/
+
+    /*    content*/
+    .content-container{
+        background-color: rgba(23, 70, 207, 0.1);
+        /*border: 1px solid saddlebrown;*/
+        position: relative;
+        margin-top: 10%;
+        /*display: flex;*/
+        /*flex: 1;*/
+        /*flex-direction: row;*/
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+
+    .explore-img-container{
+        /*width: 80%;*/
+        display: inline-block;
+        margin-top: 20px;
+        /*border: 1px solid greenyellow;*/
+    }
+
+    .explore-text{
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .explore-img-photography{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593690721/lading%20page/Frame_12_1_m8mesj.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 250px;
+        height: 180px;
+    }
+
+    .explore-img-beauty{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593691063/lading%20page/Frame_4_eu6lkr.png);
+        width: 250px;
+        height: 180px;
+    }
+
+    .explore-img-fitness-and-gym{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593711178/lading%20page/Frame_7_1_clpmhv.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 250px;
+        height: 180px;
+    }
+
+    .explore-img-payment{
+        background-repeat: no-repeat;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593691058/lading%20page/Frame_11_qxphea.png);
+        background-size: cover;
+        width: 250px;
+        height: 180px;
+    }
+
+    .explore-img-pharmacy{
+        display: none;
+    }
+
+
+    .explore-img-portfolio{
+        display: none;
+    }
+
+    .explore-new{
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593691808/lading%20page/Frame_13_x3uzng.png);
+
+
+    }
+
+    .mobile-delete{
+        display: none;
+    }
+
+    .button-mobile{
+        position: relative;
+    }
+
+    .button-mobile button{
+        width: 144px;
+        height: 38px;
+        background-color: #1746CF;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        border: none;
+        float: right;
+        display: block;
+        margin-top: 25px;
+        margin-right: 30px;
+    }
+    /*    content*/
+
+    /*    feature*/
+    .feature-container{
+        position: relative;
+        width: 100%;
+
+    }
+
+    .feature-headline-container{
+        /*padding-left: 133px;*/
+        /*padding-right: 133px;*/
+    }
+
+    .feature-title{
+        text-align: center;
+        margin-top: 10%;
+        /*border: 1px solid greenyellow;*/
+        /*width: 13%;*/
+    }
+
+    .feature-title p{
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        /*line-height: 80px;*/
+        margin-bottom: 0 !important;
+    }
+    .feature-line{
+        border-bottom: 3px solid #2B374B;
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    .feature-subtitle {
+        text-align: justify;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        /*width: 60%;*/
+        margin-top: 5%;
+    }
+
+    .feature-set{
+        width:100%;
+        /*margin-top: 10%;*/
+        /*padding-left:10% ;*/
+
+    }
+
+    .feature-component{
+        /*width: 40%;*/
+        padding: 15px;
+        /*display: inline-block;*/
+        /*width: 550px;*/
+        height: 52px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25);
+        margin: 45px;
+
+        /*text-align: center;*/
+    }
+
+    .feature-component p{
+        font-weight: bold;
+        font-size: 18px;
+        /*line-height: 80px;*/
+        font-style: normal;
+        /*margin: 15px 0 0 85px;*/
+        margin-left: 52px;
+    }
+
+    .feature-full{
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 25px;
+        transform: scale(1.6);
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593692856/lading%20page/Frame_1_3_esvc7e.png);
+        height: 19px;
+
+    }
+
+    .feature-free{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593693056/lading%20page/Vector_3_nmlldo.png);
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 17px;
+        transform: scale(1.7);
+        margin-left: 5px;
+        margin-top: 5px;
+        height: 15px;
+    }
+
+    .feature-browser{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593693011/lading%20page/Vector_2_k6pzxq.png);
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        transform: scale(2);
+        margin-top: 4px;
+        margin-left: 5px;
+    }
+
+    .feature-google{
+        position: absolute;
+        margin-left: 6px;
+        margin-top: 2px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 17px;
+        height: 18px;
+        transform: scale(1.6);
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593693207/lading%20page/Vector_5_ox6mnp.png);
+    }
+
+    .feature-well{
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        transform: scale(1.9);
+        margin-left: 5px;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593693178/lading%20page/Frame_1_4_gyuohk.png);
+    }
+
+    .feature-updates{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593693083/lading%20page/Vector_4_alyiya.png);
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 19px;
+        margin-left: 5px;
+        margin-top: 5px;
+        /*margin-left: -7px;*/
+        transform: scale(1.7);
+        height: 15px;
+    }
+    /*    feature*/
+
+
+    /*    about*/
+    .about-container{
+        position: relative;
+
+    }
+
+    .about-line{
+        border-bottom: 3px solid #2B374B;
+        width: 18%;
+        margin: 0 auto;
+    }
+
+    .about-content{
+        width: 100%;
+        margin-top: 6%;
+        background-color: rgba(23, 70, 207, 0.1);
+        /*padding: 124px 100px;*/
+        padding-bottom: 10%;
+        /*display: flex;*/
+        /*flex: 1;*/
+        /*flex-direction: row;*/
+    }
+
+    .about-left{
+        display: inline-block;
+        padding: 0 5%;
+        /*width: 70%;*/
+        /*margin-right: 50px;*/
+        /*bottom: 0;*/
+    }
+    .about-headline-title{
+        margin-top: 170px;
+        font-weight: bold;
+        font-size: 24px;
+        /*line-height: 39px;*/
+        /*width: 90%;*/
+        text-align: center;
+    }
+
+    .about-title{
+        margin-top: 64px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 39px;
+        /*width: 90%;*/
+        text-align: center;
+    }
+    .about-headline-title p{
+        font-weight: 900;
+        font-size: 24px;
+        /*line-height: 80px;*/
+        margin-bottom: 0 !important;
+    }
+    .about-subtitle{
+        font-weight: normal;
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .about-right{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 295px;
+        margin: 50px auto;
+        height: 259px;
+        /*width: 20%;*/
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593703221/lading%20page/Rectangle_107_c3khz1.png);
+    }
+
+
+    /*    about*/
+
+
+
+    /*    reviews*/
+    .reviews-container{
+        width: 100%;
+        position: relative;
+    }
+
+    .reviews-headline{
+        /*padding-left: 133px;*/
+        /*padding-right: 133px;*/
+    }
+
+    .reviews-title{
+        text-align: center;
+        margin-top: 10%;
+        /*border: 1px solid greenyellow;*/
+        /*width: 13%;*/
+    }
+
+    .reviews-title p{
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        /*line-height: 80px;*/
+        margin-bottom: 0 !important;
+    }
+    /*.feature-line{*/
+    /*    border-bottom: 3px solid #2B374B;*/
+    /*    width: 85%;*/
+    /*    margin: 0 auto;*/
+    /*}*/
+    .reviews-set{
+        width:100%;
+        /*display: flex;*/
+        /*flex: 1;*/
+        /*flex-direction: row;*/
+        justify-content: center;
+        margin-top: 10%;
+        /*padding-left: 133px;*/
+        /*padding-right: 133px;*/
+    }
+
+    .reviews-card{
+        /*width: 40%;*/
+        /*padding-top: 5%;*/
+        text-align: center;
+        height: 380px;
+        margin: 30px 10%;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25), -4px -4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .reviews-img1{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 140px;
+        display: inline-block;
+        height: 136px;
+        margin: 30px auto;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695479/lading%20page/Ellipse_7_s2qnku.png);
+    }
+
+    .reviews-img2{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 140px;
+        height: 136px;
+        display: inline-block;
+        margin: 30px auto;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695478/lading%20page/Ellipse_8_d08g3r.png);
+    }
+
+    .reviews-img3{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695475/lading%20page/Ellipse_9_qdelkn.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 30px auto;
+        display: inline-block;
+        width: 140px;
+        height: 136px;
+
+    }
+
+    .reviews-intro{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: justify;
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+
+    .reviews-name{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .reviews-rate1{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 202px;
+        height: 30px;
+        margin: 0 auto;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695521/lading%20page/Frame_1_5_jgm8x2.png);
+    }
+    .reviews-rate2{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 202px;
+        height: 30px;
+        margin: 0 auto;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695523/lading%20page/Frame_2_mxvkzq.png);
+    }
+    .reviews-rate3{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 202px;
+        height: 30px;
+        margin: 0 auto;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695523/lading%20page/Frame_2_mxvkzq.png);
+    }
+    /*    reviews*/
+
+
+    /*    contact*/
+    .contact-container{
+        width: 100%;
+        position: relative;
+        margin-top: 20%;
+    }
+
+    .contact-headline{
+        /*padding-left: 133px;*/
+        /*padding-right: 133px;*/
+    }
+
+    .contact-title{
+        text-align: center;
+        margin-top: 10%;
+        /*border: 1px solid greenyellow;*/
+        /*width: 23%;*/
+    }
+
+    .contact-title p{
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        /*line-height: 80px;*/
+        margin-bottom: 0 !important;
+    }
+
+    .contact-form{
+        /*padding-left: 133px;*/
+        /*padding-right: 133px;*/
+        margin: 8% auto;
+        padding: 0 10%;
+        width: 100%;
+    }
+
+    .col input{
+        border: 2px solid rgba(43, 55, 75, 0.7);
+        border-radius: 0!important;
+        /*width: 40%;*/
+    }
+
+    textarea{
+        width: 100%;
+        border: 2px solid rgba(43, 55, 75, 0.7);
+        font-weight: normal;
+        font-size: 18px;
+        padding: 5px 10px;
+
+        height: 171px;
+        color: rgba(43, 55, 75, 0.6);
+    }
+
+
+    .form-group{
+        margin-top: 3%;
+    }
+
+    .contact-btn{
+        width: 100%;
+        height: 40px;
+        float: right;
+        /*margin-right: 131px;*/
+        color: white;
+        background-color: #1746CF;
+        border: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        display: block;
+    }
+
+
+    /*    contact*/
+
+    /*    download*/
+    .download-container{
+        margin-top: 40%;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .download-title{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        margin-top: 10%;
+    }
+
+    .download-subtitle{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        margin: 0 10%;
+    }
+
+    .download-btn{
+        margin-top: 10%;
+        width: 144px;
+        height: 38px;
+        /*float: right;*/
+        /*margin-right: 131px;*/
+        color: white;
+        background-color: #1746CF;
+        border: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 20%;
+        /*display: block;*/
+    }
+    /*    download*/
+
+    /*    footer*/
+    .footer-container{
+        height: 500px;
+        width: 100%;
+        background-color: #222222;
+        position: relative;
+    }
+
+    table{
+        margin: 0 auto;
+        padding: 100px;
+        text-align: left;
+
+    }
+    table tr{
+        color: white;
+    }
+    table thead tr td{
+        /*width: 25%;*/
+        padding: 50px 50px 20px 50px;
+
+    }
+
+    tbody tr td{
+        padding: 1px 50px 1px 50px;
+    }
+
+    .address-adjust{
+        /*width: 50%;*/
+    }
+    thead{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        /*line-height: 80px;*/
+    }
+
+    tbody{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        /*line-height: 30px;*/
+    }
+
+    .second-table{
+        margin: 0 auto;
+        padding: 100px;
+        text-align: left;
+
+    }
+    .second-table tr{
+        color: white;
+    }
+    /*.second-table thead tr td{*/
+    /*    !*width: 25%;*!*/
+    /*    padding: 50px 50px 20px 50px;*/
+
+    /*}*/
+
+    .second-table-head1{
+        padding: 50px 0px 20px 60px;
+    }
+
+    .second-table-head2{
+        padding: 50px 0px 20px 50px;
+    }
+
+    .second-table tbody tr td:first-child{
+        padding: 1px 0px 1px 50px;
+    }
+
+    .second-table thead{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        /*line-height: 80px;*/
+    }
+
+    .second-table tbody{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        /*line-height: 30px;*/
+    }
+    /*    footer*/
+    /*    copyright*/
+    .copyright-container{
+        margin-top: 5%;
+        display: block;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 30px;
+        text-align: center;
+        position: relative;
+    }
+    /*    copyright*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*pc*/
+@media screen and (min-width:961px) {
+
+    .pc-delete{
+        display: none;
+    }
+
+    /*nav*/
+    .bg-light{
+        background-color: white !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        /*padding-top: 10px;*/
+        font-weight: 600;
+        color: #222222;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    nav{
+        padding: 0!important;
+        margin: 0 !important;
+        position: absolute !important;
+        display: inline-block !important;
+        width: 100% !important;
+    }
+
+    .navbar-nav{
+        /*height: 88px;*/
+        width: 100%;
+    }
+    .nav-logo-adjust{
+        /*display: flex;*/
+        /*justify-content: center;*/
+        margin-left: 10%;
+        margin-right: 10%;
+        /*vertical-align: center;*/
+    }
+
+
+
+    .nav-logo{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593678791/lading%20page/Frame_1_2_me4gpa.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 100%;
+        height: 100%;
+        margin-left: 100px;
+        margin-right: 200px;
+        margin-top: 18px;
+        z-index: 10;
+        position: relative;
+        display: inline-block;
+        /*height: 50px;*/
+        /*margin: 0 50%;*/
+    }
+
+    .nav-right button{
+       background-color:  #1746CF;
+        border: none;
+        color: white;
+        width: 242px;
+        height: 76px;
+        font-weight: 600;
+        font-size: 24px;
+        margin-left: 60px;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        /*line-height: 80px;*/
+    }
+
+    .nav-top-active{
+        color: #1746CF !important;
+    }
+    .navbar-nav ul{
+        display:flex;
+        width: 100%;
+        flex-direction:row;
+        justify-content:center;
+        height:88px;
+        /*border: 1px solid pink;*/
+        padding: 0 10%;
+    }
+
+    .nav-link{
+        margin-top: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar-nav ul li a{
+        list-style:none;
+        height:73px;
+        line-height:73px;
+        /*border: 1px solid seagreen;*/
+        width: 25%;
+        z-index: 5;
+        /*margin: 0 auto;*/
+    }
+
+
+    /*    nav*/
+
+/*    banner*/
+    .banner-container{
+        position: absolute;
+        /*height: 650px;*/
+        width: 100%;
+        height: 100%;
+        background-color: #1746CF;
+        z-index: -1;
+
+        /*text-align: center;*/
+    }
+
+    .banner{
+        position: relative;
+    }
+
+    .banner-title{
+        /*margin-top: 194px;*/
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 80px;
+        color: white;
+        width: 60%;
+        margin: 194px auto 0 auto;
+        text-align: center;
+    }
+
+    .banner-subtitle{
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 40px;
+        color: white;
+        width:50%;
+        margin: 4% auto 0 auto;
+        text-align: justify;
+    }
+
+    .banner-btn-set{
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    .banner-btn-demo{
+        width: 230px;
+        height: 69px;
+        background-color: white;
+        color: #1746CF;
+        font-weight: 600;
+        font-size: 24px;
+        /*line-height: 80px;*/
+        border: none;
+        margin-right: 1%;
+    }
+
+    .banner-btn-download{
+        width: 230px;
+        height: 69px;
+        border: 2px solid white;
+        color: white;
+        font-weight: 600;
+        font-size: 24px;
+        background-color: transparent;
+        margin-left: 1%;
+        /*line-height: 80px;*/
+    }
+/*    banner*/
+
+
+/*    explore*/
+    .explore-container{
+        /*display: block;*/
+        /*position: inherit;*/
+        /*position: absolute;*/
+        position: relative;
+        width: 100%;
+        height: 50%;
+        padding-top: 884px;
+        padding-left: 133px;
+        /*padding-top: 80%;*/
+    }
+
+    .explore-title{
+        text-align: center;
+        /*border: 1px solid greenyellow;*/
+        /*width: 34%;*/
+    }
+
+    .explore-title p{
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        margin-bottom: 0 !important;
+    }
+    .explore-line{
+        border-bottom: 3px solid #2B374B;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .explore-subtitle{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        width: 60%;
+        margin-top: 5%;
+    }
+/*    explore*/
+
+/*    content*/
+    .content-container{
+        background-color: rgba(23, 70, 207, 0.1);
+        /*border: 1px solid saddlebrown;*/
+        position: relative;
+        margin-top: 10%;
+        /*display: flex;*/
+        /*flex: 1;*/
+        /*flex-direction: row;*/
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+
+    .explore-img-container{
+        /*width: 48%;*/
+        display: inline-block;
+        margin-top: 100px;
+        /*border: 1px solid greenyellow;*/
+    }
+
+    .explore-text{
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 80px;
+        text-align: center;
+    }
+    .explore-img-photography{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593690721/lading%20page/Frame_12_1_m8mesj.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 558px;
+        height: 340px;
+    }
+
+    .explore-img-beauty{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 558px;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593691063/lading%20page/Frame_4_eu6lkr.png);
+        height: 340px;
+    }
+
+    .explore-img-fitness-and-gym{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593711178/lading%20page/Frame_7_1_clpmhv.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 558px;
+        height: 340px;
+    }
+
+    .explore-img-payment{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593691060/lading%20page/Rectangle_87_cdyfks.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 558px;
+        height: 340px;
+    }
+
+    .explore-img-pharmacy{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593691058/lading%20page/Frame_11_qxphea.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 558px;
+        height: 340px;
+    }
+
+    .explore-img-portfolio{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593711180/lading%20page/Frame_10_vivoep.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 558px;
+        height: 340px;
+    }
+
+    .explore-new{
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 90px;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593691808/lading%20page/Frame_13_x3uzng.png);
+    }
+/*    content*/
+
+    .button-mobile{
+        position: relative;
+        height: 76px;
+    }
+
+    .button-mobile button{
+        width: 242px;
+        height: 76px;
+        background-color: #1746CF;
+        color: white;
+        font-weight: 600;
+        font-size: 24px;
+        border: none;
+        float: right;
+        display: block;
+        margin-top: 25px;
+        margin-right: 30px;
+    }
+
+/*    about*/
+    .about-container{
+        margin-top: 15%;
+        position: relative;
+
+    }
+
+    .about-content{
+        width: 100%;
+        margin-top: 6%;
+        background-color: rgba(23, 70, 207, 0.1);
+        padding: 124px 100px;
+
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+    }
+
+    .about-headline-title{
+        text-align: center;
+    }
+
+    .about-headline-title p {
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        /* line-height: 80px; */
+        margin-bottom: 0 !important;
+    }
+    .about-left{
+        display: inline-block;
+        width: 70%;
+        margin-right: 50px;
+        bottom: 0;
+    }
+
+    .about-title{
+        margin-top: 170px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 39px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .about-subtitle{
+        font-weight: normal;
+        font-size: 18px;
+        text-align: justify;
+    }
+    .about-line{
+        border-bottom: 3px solid #2B374B;
+        width: 18%;
+        margin: 0 auto;
+    }
+    .about-right{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 465px;
+        height: 374px;
+        /*width: 20%;*/
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593703221/lading%20page/Rectangle_107_c3khz1.png);
+    }
+
+/*    about*/
+
+/*    feature*/
+    .feature-container{
+        position: relative;
+        width: 100%;
+
+    }
+
+    .feature-headline-container{
+        padding-left: 133px;
+        padding-right: 133px;
+    }
+
+    .feature-title{
+        text-align: center;
+        margin-top: 10%;
+        /*border: 1px solid greenyellow;*/
+        /*width: 13%;*/
+    }
+
+    .feature-title p{
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        /*line-height: 80px;*/
+        margin-bottom: 0 !important;
+    }
+    .feature-line{
+        border-bottom: 3px solid #2B374B;
+        width: 18%;
+        margin: 0 auto;
+    }
+
+    .feature-subtitle {
+        text-align: justify;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        /*width: 60%;*/
+        margin-top: 5%;
+    }
+
+    .feature-set{
+        width:100%;
+        margin-top: 5%;
+        padding-left:10% ;
+
+    }
+
+    .feature-component{
+        width: 40%;
+        padding: 17px;
+        display: inline-block;
+        /*width: 550px;*/
+        height: 98px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25);
+        margin: 15px;
+
+        /*text-align: center;*/
+    }
+
+    .feature-component p{
+        font-weight: bold;
+        font-size: 20px;
+        /*line-height: 80px;*/
+        font-style: normal;
+        margin: 15px 0 0 85px;
+
+    }
+
+    .feature-full{
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 80px;
+        transform: scale(0.7);
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593692856/lading%20page/Frame_1_3_esvc7e.png);
+        height: 60px;
+
+    }
+
+    .feature-free{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593693056/lading%20page/Vector_3_nmlldo.png);
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 70px;
+        transform: scale(.6);
+        height: 60px;
+    }
+
+    .feature-browser{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593693011/lading%20page/Vector_2_k6pzxq.png);
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        transform: scale(.7);
+    }
+
+    .feature-google{
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 62px;
+        transform: scale(.6);
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593693207/lading%20page/Vector_5_ox6mnp.png);
+    }
+
+    .feature-well{
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px;
+        margin-left: 5px;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593693178/lading%20page/Frame_1_4_gyuohk.png);
+    }
+
+    .feature-updates{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593693083/lading%20page/Vector_4_alyiya.png);
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 80px;
+
+        margin-left: -7px;
+        transform: scale(.6);
+        height: 65px;
+    }
+    /*    feature*/
+
+/*    reviews*/
+    .reviews-container{
+        width: 100%;
+        position: relative;
+    }
+
+    .reviews-headline{
+        padding-left: 133px;
+        padding-right: 133px;
+    }
+
+    .reviews-title{
+        text-align: center;
+        margin-top: 10%;
+        /*border: 1px solid greenyellow;*/
+        /*width: 13%;*/
+    }
+
+    .reviews-title p{
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        /*line-height: 80px;*/
+        margin-bottom: 0 !important;
+    }
+    /*.feature-line{*/
+    /*    border-bottom: 3px solid #2B374B;*/
+    /*    width: 85%;*/
+    /*    margin: 0 auto;*/
+    /*}*/
+    .reviews-set{
+        width:100%;
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10%;
+        padding-left: 133px;
+        padding-right: 133px;
+    }
+
+    .reviews-card{
+        width: 40%;
+        text-align: center;
+        height: 428px;
+        margin: 0 18px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25), -4px -4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .reviews-img1{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 178px;
+        height: 172px;
+        margin: 41px auto;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695479/lading%20page/Ellipse_7_s2qnku.png);
+    }
+
+    .reviews-img2{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 178px;
+        height: 172px;
+        margin: 41px auto;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695478/lading%20page/Ellipse_8_d08g3r.png);
+    }
+
+    .reviews-img3{
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695475/lading%20page/Ellipse_9_qdelkn.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 178px;
+        margin: 41px auto;
+        height: 172px;
+
+    }
+
+    .reviews-intro{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: justify;
+        padding: 0 10px;
+    }
+
+    .reviews-name{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .reviews-rate1{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 202px;
+        height: 30px;
+        margin: 0 auto;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695521/lading%20page/Frame_1_5_jgm8x2.png);
+    }
+    .reviews-rate2{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 202px;
+        height: 30px;
+        margin: 0 auto;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695523/lading%20page/Frame_2_mxvkzq.png);
+    }
+    .reviews-rate3{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 202px;
+        height: 30px;
+        margin: 0 auto;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593695523/lading%20page/Frame_2_mxvkzq.png);
+    }
+    /*    reviews*/
+
+/*    contact*/
+    .contact-container{
+        width: 100%;
+        position: relative;
+        margin-top: 5%;
+    }
+
+    .contact-headline{
+        padding-left: 133px;
+        padding-right: 133px;
+    }
+
+    .contact-title{
+        text-align: center;
+        margin-top: 10%;
+        /*border: 1px solid greenyellow;*/
+        /*width: 23%;*/
+    }
+
+    .contact-title p{
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        /*line-height: 80px;*/
+        margin-bottom: 0 !important;
+    }
+
+    .contact-form{
+        padding-left: 133px;
+        padding-right: 133px;
+        margin: 8% auto;
+        width: 100%;
+    }
+
+    .col input{
+        border: 2px solid rgba(43, 55, 75, 0.7);
+        border-radius: 0!important;
+        /*width: 40%;*/
+    }
+
+    textarea{
+        width: 100%;
+        border: 2px solid rgba(43, 55, 75, 0.7);
+        font-weight: normal;
+        font-size: 18px;
+        padding: 5px 10px;
+
+        height: 171px;
+        color: rgba(43, 55, 75, 0.6);
+    }
+
+
+    .form-group{
+        margin-top: 3%;
+    }
+
+    .contact-btn{
+        width: 200px;
+        height: 60px;
+        float: right;
+        /*margin-right: 131px;*/
+        color: white;
+        background-color: #1746CF;
+        border: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        display: block;
+    }
+
+
+/*    contact*/
+/*img-banner*/
+    .img-banner-container{
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:100%;
+        height: 247px;
+        position: relative;
+        margin-top: 30%;
+        display: block;
+        margin-bottom: 10%;
+        background-image: url(https://res.cloudinary.com/raynasun0109/image/upload/v1593698006/lading%20page/Rectangle_121_blpept.png);
+    }
+
+/*    img-banner*/
+
+/*    download*/
+    .download-container{
+        margin-top: 20%;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .download-title{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    .download-subtitle{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 80px;
+    }
+
+    .download-btn{
+        width: 200px;
+        height: 60px;
+        /*float: right;*/
+        /*margin-right: 131px;*/
+        color: white;
+        background-color: #1746CF;
+        border: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 20%;
+        /*display: block;*/
+    }
+/*    download*/
+
+/*    footer*/
+    .footer-container{
+        height: 414px;
+        width: 100%;
+        background-color: #222222;
+        position: relative;
+    }
+
+    table{
+        margin: 0 auto;
+        padding: 100px;
+        text-align: left;
+
+    }
+    table tr{
+        color: white;
+    }
+    table thead tr td{
+        /*width: 25%;*/
+        padding: 70px 50px 20px 50px;
+
+    }
+
+    tbody tr td{
+        padding: 5px 50px 5px 50px;
+    }
+
+    .address-adjust{
+        /*width: 50%;*/
+    }
+    thead{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 80px;
+    }
+
+    tbody{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+    }
+/*    footer*/
+/*    copyright*/
+    .copyright-container{
+        margin-top: 5%;
+        display: block;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        position: relative;
+    }
+/*    copyright*/
+}
