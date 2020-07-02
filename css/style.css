@@ -98,10 +98,6 @@
     font-size: 1.2rem;
 }
 
-.checker{
-    border: 2px var(--primary-color) solid;
-}
-
 .hr-dark{
     margin: auto;
     width: 12rem;
@@ -189,20 +185,6 @@ h1{
 
 
 /* HEADER STYLE */
-/* .template-img{
-    background-image: url("../img/bk-1.png"),
-    url("../img/bk-2.png"), url("../img/bk-3.png"),
-    url("../img/bk-4.png"), url("../img/bk-5.png"),
-    url("../img/bk-6.png");
-    background-position: left 24.33% right 59.13% top 37.2% bottom 23.26%;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 15%, 15%, 15%, 15%, 15%, 15%;
-    transform: rotate(144.74deg), rotate(54.36deg), rotate(53.54deg),
-    rotate(-34.06deg), rotate(-33.41deg) rotate(-124.06deg);
-    max-height: 100vh;
-    overflow: auto;
-}*/
-
 .navbar{
     padding-top: 2rem;
 }
@@ -260,7 +242,6 @@ h1{
 
 
 /* MAIN SECTION */
-
 /* LATEST DEMO STYLE  */
 main .row h1{
     text-align: center;
