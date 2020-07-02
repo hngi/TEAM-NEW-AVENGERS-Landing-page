@@ -157,6 +157,7 @@
 /* ELEMENT STYLE */
 html,body{
     font-family: "Nunito Sans", "Proxima Nova", sans-serif;
+    overflow: hidden;
 }
 
 header{
@@ -194,7 +195,7 @@ h1{
     width: 100vw;
     height: 92.5vh;
     background: url('../img/Group\ 33.png') no-repeat center center/cover;
-    z-index: 1; 
+    z-index: 1;
 }
 
 nav{
