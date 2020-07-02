@@ -1,3 +1,199 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proxima+Nova&display=swap");
+/* FONT FAMILY */
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
+
+/* UTILITIES STYLE */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #EC7A00;
+    --secondary-color: #ffffff;
+    --text-color: #0E0F10;
+}
+
+.btn-primary{  
+    background-color: var(--primary-color);
+    border: none; 
+}
+
+.btn-primary-outline{
+    background-color: transparent;
+    border: 2px var(--primary-color) solid;
+}
+
+.btn-secondary{
+    background: var(--secondary-color);
+    border: none;
+}
+
+.btn-secondary-outline{
+    background: transparent;
+    border: 2px var(--secondary-color) solid;
+}
+
+.primary-color{
+    color: var(--primary-color) !important;
+}
+
+.text-color{
+    color: var(--text-color) !important;
+}
+
+.secondary-color{
+    color:var(--secondary-color) !important;
+}
+
+@media (min-width: 578px){
+    .mobile{
+        display: none;
+    }
+}
+
+/* ELEMENT STYLE */
+html,body{
+    font-family: "Nunito Sans", "Proxima Nova", sans-serif;
+}
+
+header{
+    background: url("../img/Rectangle\ 6.png") no-repeat center center/cover;
+    max-height: 100vh;
+}
+
+a{
+    color: var(--secondary-color) !important;
+}
+
+main{
+    background: var(--text-color);
+}
+
+/* HEADER STYLE */
+/* .template-img{
+    background-image: url("../img/bk-1.png"),
+    url("../img/bk-2.png"), url("../img/bk-3.png"),
+    url("../img/bk-4.png"), url("../img/bk-5.png"),
+    url("../img/bk-6.png");
+    background-position: left 24.33% right 59.13% top 37.2% bottom 23.26%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 15%, 15%, 15%, 15%, 15%, 15%;
+    transform: rotate(144.74deg), rotate(54.36deg), rotate(53.54deg),
+    rotate(-34.06deg), rotate(-33.41deg) rotate(-124.06deg);
+    max-height: 100vh;
+    overflow: auto;
+}*/
+
+.navbar{
+    padding-top: 2rem;
+}
+
+.navbar-brand{
+    color: var(--secondary-color);
+}
+
+.navbar-brand .brand-color{
+    color: var(--primary-color);
+}
+
+.navbar-brand .logo{
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    font-family: "Nunito Sans";
+}
+
+.nav-item{
+    padding: 0 1rem;
+}
+
+.nav-item i{
+    padding-left: 0.5rem;
+}
+
+.dropdown-menu a{
+    color: var(--text-color) !important;
+}
+
+.hero{
+    text-align: center;
+}
+
+.hero h1{
+    font-family: "Proxima Nova Bold";
+    font-size: 72px;
+    margin-top: 6rem;
+}
+
+.hero button{
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 13rem;
+}
+
+main .row{
+    text-align: center;
+}
+
+main .row h1{
+    margin-top: 6rem;
+}
+
+/* MOBILE STLYE  */
+@media (max-width: 576px){
+
+    .nav-link--button{
+        display: none;
+    }
+    .navbar-toggler {
+        /* padding: 0.25rem 0.75rem;
+        font-size: 1.25rem; */
+        line-height: 1;
+        color: var(--secondary-color);
+        background-color: transparent;
+        border: none;
+        border-radius: 0.25rem;
+    }
+    button .fa-bars.fa-2x{
+        color: var(--secondary-color);
+    }
+    .hero{
+        text-align: center;
+    }
+    
+    .hero h1{
+        font-family: "Proxima Nova Bold";
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: 2rem;
+    }
+    
+    .hero button{
+        width: 200px;
+        padding: 0.75rem 0.5rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
