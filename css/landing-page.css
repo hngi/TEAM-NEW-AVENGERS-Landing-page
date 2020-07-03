@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;   
+   }
+   /* font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif; */
+   body{
+      
+   }
+   /* nav bar */
+   #nav-bar{
+       position: sticky;
+       top: 0;
+       z-index: 10;
+      
+   }
+   .navbar{
+       background:#fff;
+       /* padding: 0 !important; */
+       padding: 1rem 3rem;
+       }
+   .navbar-brand img{
+       height: 40px;
+       padding-left: 20px;
+   }
+   .navbar-nav li {
+       padding: 0 10px;
+   }
+   .navbar-nav li a {
+       color: #333 !important;
+       font-family: 'Roboto', sans-serif;
+       font-size: 1rem;
+       line-height: 22px;
+       text-align: left;
+   }
+   .navbar-nav li a:hover{
+       color:#f2994a;
+   }
+   .fa-bars{
+       color: white;
+       font-size: 30px !important;
+   }
+   .navbar-toggler{
+       outline: none;
+   }
+/* welcome section */
+   .emko{
+       background: url(../img/welcome.png) no-repeat center center/cover;
+       font-family: 'Roboto', sans-serif; 
+       min-height: 746px;
+       max-width:1440px; 
+       margin-bottom: 0 !important;
+   }
+   .welcome-title{font-family: 'Nunito', sans-serif; font-size:4.3rem; line-height: 95px; color: #ece9e9; padding-top:7rem;} 
+   .welcome-subtitle{padding-top:.5rem; color: #ece9e9;}
+   .btn-shopnow{ font-family: 'Nunito', sans-serif;
+    font-size: 2rem; line-height: 55px; color: #ece9e9; background: #02bde7;}
+
+   /* how it works */
+   #how-it-works{ background: #02bde7; font-family: 'Nunito', sans-serif; padding-top:2.7rem; color: #fff;}
+   .how-it-works-main{font-size: 3rem; font-weight: bold; line-height: 82px;}
+   .how-it-works-sub{ font-size: 1.5rem; line-height: 49px; padding: 0 2.3rem;}
+   .how-it-works-content{padding-top: 3rem;}
+  
+   .how-it-works-title{font-size: 2.5rem; line-height: 75px;}
+   .how-it-works-subcontent{font-size: 1.5rem; line-height: 49px;}
+   .btn-getstarted{font-size:2rem; line-height: 55px; background: #fff; color: #02bde7;}
+
+   /* template and demos */
+   #template-demos{color: #333; font-family: 'Nunito', sans-serif; padding-top: 3.5rem;}
+   .template-sub{padding-bottom: 3rem;}
+   .templates{background: #f8f9fc;}
+   .applanding-img{max-width: 100%;}
+   .template-name{font-size: 1.5rem;}
+
+ /* our customers section */
+ .customer-review{padding: 0 2.3rem; color: #7b7b7b;}
+ .customer-review-card{margin-bottom: 1.5rem;}
+ .customer-company{font-size: 2rem;}
+ .customer-comment{font-size: 1.2rem;}
+ .customer-name{font-size: 1.2rem; color: #02bde7;}
+
+ /* pricing section */
+ #pricing{ background: #f8f9fc; font-family: 'Nunito', sans-serif;}
+ .pricing-title{font-size: 3rem; font-weight: bold; color:#02bde7; line-height: 82px;}
+ .price-plan{font-size: 3rem; line-height: 65px;}
+ .pricing-sub{font-size: 1.5rem;}
+ .btns{
+     padding-bottom:2rem;
+ }
+ .btn-year{padding-right: 2rem !important;}
+ .pricing{padding: 0 2.3rem; color: #333;}
+ .price-card{margin-bottom: 1.5rem;}
+ .price-type{font-size: 2rem;}
+ .price-offers{font-size: 1.2rem;}
+ .btn-getstarted2{font-size:2rem; line-height: 55px; background: #02bde7; color: #f8f9fc;}
+
+ /* footer section */
+ #footer{background: #000000 !important; color:#fff; font-family: 'Nunito', sans-serif; padding-top: .3rem;}
+ .footer-content{
+    padding: 0 2.3rem;
+    margin-top: 2rem;
+}
+
+.footer-link{ font-size: 14px;
+   color:#fff; text-decoration: none;
+text-decoration-style: none;}
+.footer-link:hover{
+color: #96772c;
+}    
+hr
+.copyright-footer {
+   box-shadow: none;
+   border: none;
+   background: #000000 !important;
+   color: #ffffff !important;
+   
+}
+
