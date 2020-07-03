@@ -304,32 +304,153 @@
   margin: 0 auto;
 }
 
+.stay-in-know{
+  background: #F7FAFD;
+  height: 50vh;
+  text-align: center;
+  position: relative;
+}
+
+.stay-in-know-content{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  z-index: 2;
+}
+
+.stay-in-know-paragraph{
+  margin-bottom: 50px;
+}
+
+.stay-in-know-head{
+  font-size: 32px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 1.2px;
+color: #1E2022;
+margin: 20px;
+top: 20%;
+}
+
 .footer{
   background-color: var(--second-grey);
-  margin: 0 auto;
+  margin: 10px;
+  position: relative;
+  height: 35%;
+  margin: 10px;
 }
 
 .footer-words{
-  height: 40vh;
+  height: 30vh;
   width: 20vw;
   display: inline-block;
+  left: 3%;
+  position: absolute;
+  margin: 0 10px;
+}
+
+.fw-head{
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.688889px;
+  color: #1E2022;
+}
+
+.fw-text{
+  font-size: 14px;
+line-height: 27px;
+letter-spacing: 0.494118px;
+color: #77838F;
+
 }
 
 .helpful-links-head{
-  height: 40vh;
+  height: 30vh;
   width: 20vw;
   display: inline-block;
+  position: absolute;
+  left: 30%;
+  margin: 0 10px;
+}
+
+.helpful-links{
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.688889px;
+  color: #1E2022;
+}
+
+.helpful-links-links{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.466667px;
+  color: #77838F;
 }
 
 .services{
-  height: 40vh;
+  height: 30vh;
   width: 20vw;
   display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin: 0 10px;
+}
+
+.services-h3{
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.688889px;
+  color: #1E2022;
+}
+
+.services-links{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.466667px;
+  color: #77838F;
 }
 
 .contact-us{
-  height: 40vh;
+  height: 30vh;
   width: 20vw;
   display: inline-block;
+  position: absolute;
+  left: 70%;
+  margin: 0 10px;
 }
 
+.contact-us-h3{
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.688889px;
+  color: #1E2022;
+}
+
+.contact-us-content{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.466667px;
+  color: #77838F;
+  left: 4%;
+}
+
+.copyright-section{
+  text-align: center;
+  margin: 0;
+  bottom: 0;
+  position: relative;
+}
+
+.footer-hr{
+  color: antiquewhite;
+  position: absolute;
+}
+
+.copyright p{
+  position: absolute;
+  bottom: 0;
+}
