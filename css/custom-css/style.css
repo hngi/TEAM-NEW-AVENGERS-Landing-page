@@ -1,0 +1,456 @@
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.body {
+  background-color: var(--body-color);
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Variables */
+:root {
+  --secondary-color: #02BDE7;
+  --primary-color: #000000;
+  --nav-color: #77838F;
+  --body-color: #FFFFFF;
+  --second-blue: #1746CF;
+  --second-grey: #F7FAFD;
+  --font-family: 'Nunito', sans-serif;
+}
+
+/* nav bar styles */
+.nav {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.075);
+  position: relative;
+  height: 75px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 23px;
+  letter-spacing: 0.6px;
+  margin: 22px 20px;
+  display: inline-block;
+  position: absolute;
+  text-decoration: none;
+  left: 10%;
+}
+
+.first-logo {
+  color: var(--primary-color);
+}
+
+.second-logo {
+  color: var(--secondary-color);
+}
+
+.menus {
+  position: absolute;
+  right: 18%;
+  margin: 25px;
+}
+
+.menus li {
+  display: inline-block;
+  margin-left: 35px;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1.2px;
+  font-family: nunito;
+}
+
+.menus a {
+  text-decoration: none;
+  color: var(--nav-color);
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: var(--secondary-color);
+  display: inline;
+  position: absolute;
+  right: 10%;
+  margin: 16px 18px;
+  border-radius: 5px;
+}
+
+.button a {
+  text-decoration: none;
+  color: var(--body-color);
+}
+
+/* hero section styles */
+.hero-section {
+  background-image: url(../../images/Path\ 4.jpg);
+  height: 91vh;
+  background-size: cover;
+  position: relative;
+}
+
+.hero {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  top: 31%;
+  left: 10%;
+  background-color: var(--body-color);
+}
+
+.main-h1 {
+  font-size: 38px;
+  line-height: 50px;
+  letter-spacing: 1.425px;
+  margin: 18px 0;
+  font-weight: normal;
+}
+
+.first-h1 {
+  color: var(--primary-color);
+  display: block;
+}
+
+.second-h1 {
+  color: var(--secondary-color);
+  display: block;
+}
+
+.hero-paragraph {
+  display: block;
+  margin: 10px 0 40px;
+  font-size: 17px;
+  font-family: var(--font-family);
+  line-height: 27px;
+  letter-spacing: 0.6px;
+  color: var(--nav-color);
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  color: var(--body-color);
+  padding: 17px 30px;
+  border-radius: 5px;
+}
+
+.hero-btn-1 {
+  background-color: var(--secondary-color);
+}
+
+.hero-btn-2 {
+  background-color: var(--second-blue);
+  margin-left: 22px;
+}
+
+/* built with styles */
+/*uses the variable (second grey) as bakground color */
+
+.built-with {
+  background-color: var(--second-grey);
+  height: 35vh;
+  position: relative;
+}
+
+.built-with-div {
+  position: absolute;
+  width: 35%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.built-with-head {
+  color: black;
+  font-size: 32px;
+  letter-spacing: 1.2px;
+  line-height: 42px;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 30px 0 15px;
+}
+
+.built-with-p {
+  font-size: 17px;
+  line-height: 27px;
+  letter-spacing: 0.6px;
+  color: var(--nav-color);
+  margin: 10px;
+}
+
+.built-with-images{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  z-index: 2;
+}
+
+.built-with-images img{
+  border: 1px solid #E0EBF7;
+  height: 82px;
+  width: 82px;
+  margin: 10px;
+}
+
+.line{
+  border-color: #E7EAF3;
+  color: #E7EAF3;
+  width: 100%;
+  border-width: 1px solid;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Miles tone section */
+.miles-tone{
+  height: 60vh;
+  background-image: url(../../images/lagos.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.miles-tone-div{
+  background-color: var(--second-grey);
+  position: absolute;
+  width: 370px;
+  height: 333px;
+  top: 20%;
+  left: 4%; 
+}
+
+.miles-tone-image1{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 40px 30px 30px;
+}
+
+.miles-tone-head{
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.675px;
+  display: inline-block;
+}
+
+.miles-tone-sub-head{
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.675px;
+  display: inline-block;
+  position: absolute;
+  top: 70px;
+  left: 120px;
+}
+
+.miles-tone-paragraph{
+  font-size: 15px;
+  line-height: 27px;
+  letter-spacing: 0.6px;
+  margin-left: 30px;
+  width: 312px;
+}
+
+.hr-div{
+  position: relative;
+}
+
+.lines{
+  position: absolute;
+  border-color: red;
+  color: red;
+  width: 100%;
+  margin-top: 25%;
+}
+
+.line2{
+  border-radius: 5px;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+  width: 2.5%;
+  border-width: 10px;
+  top: 100%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.line3{
+  border-style: dotted none none none;
+  border-color: #d8d8d8;
+  color: #d8d8d8;
+  width: 4%;
+  border-width: 10px;
+  top: 100%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.card{
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.stay-in-know{
+  background: #F7FAFD;
+  height: 50vh;
+  text-align: center;
+  position: relative;
+}
+
+.stay-in-know-content{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  z-index: 2;
+}
+
+.stay-in-know-paragraph{
+  margin-bottom: 50px;
+}
+
+.stay-in-know-head{
+  font-size: 32px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 1.2px;
+color: #1E2022;
+margin: 20px;
+top: 20%;
+}
+
+.footer{
+  background-color: var(--second-grey);
+  margin: 10px;
+  position: relative;
+  height: 35%;
+  margin: 10px;
+}
+
+.footer-words{
+  height: 30vh;
+  width: 20vw;
+  display: inline-block;
+  left: 3%;
+  position: absolute;
+  margin: 0 10px;
+}
+
+.fw-head{
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.688889px;
+  color: #1E2022;
+}
+
+.fw-text{
+  font-size: 14px;
+line-height: 27px;
+letter-spacing: 0.494118px;
+color: #77838F;
+
+}
+
+.helpful-links-head{
+  height: 30vh;
+  width: 20vw;
+  display: inline-block;
+  position: absolute;
+  left: 30%;
+  margin: 0 10px;
+}
+
+.helpful-links{
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.688889px;
+  color: #1E2022;
+}
+
+.helpful-links-links{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.466667px;
+  color: #77838F;
+}
+
+.services{
+  height: 30vh;
+  width: 20vw;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin: 0 10px;
+}
+
+.services-h3{
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.688889px;
+  color: #1E2022;
+}
+
+.services-links{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.466667px;
+  color: #77838F;
+}
+
+.contact-us{
+  height: 30vh;
+  width: 20vw;
+  display: inline-block;
+  position: absolute;
+  left: 70%;
+  margin: 0 10px;
+}
+
+.contact-us-h3{
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.688889px;
+  color: #1E2022;
+}
+
+.contact-us-content{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.466667px;
+  color: #77838F;
+  left: 4%;
+}
+
+.copyright-section{
+  text-align: center;
+  margin: 0;
+  bottom: 0;
+  position: relative;
+}
+
+.footer-hr{
+  color: antiquewhite;
+  position: absolute;
+}
+
+.copyright p{
+  position: absolute;
+  bottom: 0;
+}
