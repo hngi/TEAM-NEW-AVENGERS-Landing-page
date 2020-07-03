@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page 4</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      /*
+  code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+  code customized by github.com/bellomuboye
+*/
+
+      @media (min-width: 768px) {
+        /* Show 3rd slide on md if col-md-6*/
+        .carousel-inner
+          .active.col-sm-6.carousel-item
+          + .carousel-item
+          + .carousel-item {
+          position: absolute;
+          top: 0;
+          right: -50%; /*change this with javascript in the future*/
+          z-index: -1;
+          display: block;
+          visibility: visible;
+        }
+      }
+      @media (min-width: 768px) {
+        .carousel-item {
+          margin-right: 0;
+        }
+        /* show 2 items */
+        .carousel-inner .active + .carousel-item {
+          display: block;
+        }
+        .carousel-inner
+          .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+        .carousel-inner
+          .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+          + .carousel-item {
+          transition: none;
+        }
+        .carousel-inner .carousel-item-next {
+          position: relative;
+          transform: translate3d(0, 0, 0);
+        }
+        /* left or forward direction */
+        .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+        .carousel-item-next.carousel-item-left + .carousel-item,
+        .carousel-item-next.carousel-item-left
+          + .carousel-item
+          + .carousel-item {
+          position: relative;
+          transform: translate3d(-100%, 0, 0);
+          visibility: visible;
+        }
+        /* farthest right hidden item must be also positioned for animations */
+        .carousel-inner .carousel-item-prev.carousel-item-right {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          display: block;
+          visibility: visible;
+        }
+        /* right or prev direction */
+        .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+        .carousel-item-prev.carousel-item-right + .carousel-item,
+        .carousel-item-prev.carousel-item-right
+          + .carousel-item
+          + .carousel-item {
+          position: relative;
+          transform: translate3d(100%, 0, 0);
+          visibility: visible;
+          display: block;
+          visibility: visible;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="landing-page-4.css" />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <a href="#" class="navbar-brand">Lorem Ipsum</a>
+
+        <ul class="navbar-nav ml-auto align-items-center">
+          <li class="nav-item d-none d-md-inline-block">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+          <li class="nav-item d-none d-md-inline-block">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item d-none d-md-inline-block">
+            <a class="nav-link" href="#cta">Download</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-primary">
+              Download for free
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero px-4 py-5">
+      <div class="container py-5">
+        <div class="row flex-md-row-reverse">
+          <div
+            class="hero-img col-md-6 d-flex flex-column justify-content-center"
+          >
+            <img class="w-100" src="assets/image 1.png" />
+          </div>
+          <div
+            class="hero-text col-md-6 d-flex flex-column justify-content-center"
+          >
+            <h1>Modern themes for modern websites</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maecenas
+              sit amet quam velit. Quisque dapibus placerat purus et finibus.
+            </p>
+            <div>
+              <button class="btn btn-outline-primary btn-lg mr-2 mb-2">
+                Download for free
+              </button>
+              <button class="btn btn-outline-dark btn-lg mb-2">
+                Find out why
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="features-section section px-4 py-5">
+      <div class="container py-5">
+        <h2 class="text-center">
+          Our <span class="text-primary">features</span>
+        </h2>
+        <div class="feature-content first row text-left text-md-right">
+          <div class="col-md-6">
+            <img class="w-100" src="assets/Features 01.png" alt="" />
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h3>Feature <span class="text-primary">1</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maecenas
+              sit amet quam velit. Quisque dapibus placerat purus et finibus.
+            </p>
+          </div>
+        </div>
+        <div class="d-none d-md-block mt-n4 mb-n4">
+          <img class="w-100" src="assets/OUR FEATURES.png" alt="" />
+        </div>
+        <div
+          class="feature-content second row text-right text-md-left flex-md-row-reverse"
+        >
+          <div class="col-md-6">
+            <img class="w-100" src="assets/Features 02.png" alt="" />
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h3>Feature <span class="text-primary">2</span></h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maecenas
+              sit amet quam velit. Quisque dapibus placerat purus et finibus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="demos-section section px-4 py-5 text-center">
+      <div class="container py-5">
+        <h2>Discover our <span class="text-primary">demos</span></h2>
+        <div class="row mx-md-n5">
+          <div class="demo-content col-md-6 px-md-5">
+            <img class="w-100" src="assets/Payment image 4.png" alt="" />
+            <p class="font-weight-bolder">
+              Payment <span class="new">new</span>
+            </p>
+          </div>
+          <div class="demo-content col-md-6 px-md-5">
+            <img class="w-100" src="assets/Marketing image 6.png" alt="" />
+            <p class="font-weight-bolder caption">Marketing</p>
+          </div>
+          <div class="demo-content col-md-6 px-md-5">
+            <img
+              class="w-100"
+              src="assets/Gym and fitness image 5.png"
+              alt=""
+            />
+            <p class="font-weight-bolder caption">Gym and Fitness</p>
+          </div>
+          <div class="demo-content col-md-6 px-md-5">
+            <img class="w-100" src="assets/Beauty image 7.png" alt="" />
+            <p class="font-weight-bolder caption">Beauty</p>
+          </div>
+          <div class="demo-content col-md-6 px-md-5">
+            <img class="w-100" src="assets/Landing page image 8.png" alt="" />
+            <p class="font-weight-bolder caption">Landing Page</p>
+          </div>
+          <div class="demo-content col-md-6 px-md-5">
+            <img
+              class="w-100"
+              src="assets/App landing page image 9.png"
+              alt=""
+            />
+            <p class="font-weight-bolder caption">App landing page</p>
+          </div>
+          <div class="demo-content col-md-6 px-md-5">
+            <img class="w-100" src="assets/Pharmacy image 10.png" alt="" />
+            <p class="font-weight-bolder caption">Pharmacy</p>
+          </div>
+          <div class="demo-content col-md-6 px-md-5">
+            <img class="w-100" src="assets/Portfolio image 11.png" alt="" />
+            <p class="font-weight-bolder caption">Portfolio</p>
+          </div>
+          <div class="demo-content col-md-6 px-md-5">
+            <img class="w-100" src="assets/Photography img 12.png" alt="" />
+            <p class="font-weight-bolder caption">Photography</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonies-section section px-4 py-5">
+      <div class="container py-5">
+        <h2 class="text-center">
+          See what our <span class="text-primary">users</span> say
+        </h2>
+
+        <div class="container-fluid p-0">
+          <div
+            id="testimonies-carousel"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="control position-relative">
+              <a
+                data-slide="prev"
+                role="button"
+                href="#testimonies-carousel"
+                class="carousel-control-prev w-auto"
+                ><i class="fas fa-arrow-left text-dark"></i
+              ></a>
+              <a
+                data-slide="next"
+                role="button"
+                href="#testimonies-carousel"
+                class="carousel-control-next w-auto"
+                ><i class="fas fa-arrow-right text-dark"></i
+              ></a>
+              <div class="carousel-inner row w-100 mr-md-n3 ml-md-0 ml-0" role="listbox">
+                <div class="carousel-item col-md-6 px-md-3 active">
+                  <div
+                    class="carousel-content p-4 border border-primary rounded"
+                  >
+                    <p class="font-weight-bolder caption">"Awesome quality"</p>
+                    <p>
+                      "It is just perfect for my website. It has top notch
+                      quality. And the icing on top is it is totally free!"
+                    </p>
+                    <p>-chandan04</p>
+                  </div>
+                </div>
+                <div class="carousel-item col-md-6 px-md-3">
+                  <div
+                    class="carousel-content p-4 border border-primary rounded"
+                  >
+                    <p class="font-weight-bolder caption">
+                      "Really well thought"
+                    </p>
+                    <p>
+                      "It is just perfect for my website. It has top notch
+                      quality. And the icing on top is it is totally free!"
+                    </p>
+                    <p>-qwertydev</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="cta-section section px-4 py-5 bg-primary text-center text-light"
+    >
+      <div class="container py-5">
+        <h2>You deserve a stunning website</h2>
+        <p class="d-none d-md-block">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Donec semper
+          effictur felis vel facilis. Duis rhoncus malesuada elit. Etiam at urna
+          nec
+        </p>
+        <button type="button" class="btn btn-lg btn-light text-primary">
+          Download for free
+        </button>
+      </div>
+    </section>
+    <footer class="bg-dark p-3 text-center text-light">
+      <div class="container">
+        <i
+          class="fab fa-2x fa-instagram mx-1 border rounded-circle p-2"
+          style="width: 1em;"
+        ></i>
+        <i
+          class="fab fa-2x fa-facebook-f mx-1 border rounded-circle p-2"
+          style="width: 1em;"
+        ></i>
+        <i
+          class="fab fa-2x fa-twitter mx-1 border rounded-circle p-2"
+          style="width: 1em;"
+        ></i>
+      </div>
+    </footer>
+
+    <script>
+      /*
+      Carousel
+  */
+      $("#testimonies-carousel").on("slide.bs.carousel", function (e) {
+        /*
+          CC 2.0 License Iatek LLC 2018 - Attribution required
+      */
+        var $e = $(e.relatedTarget);
+        var idx = $e.index();
+        var itemsPerSlide = 5;
+        var totalItems = $(".carousel-item").length;
+
+        if (idx >= totalItems - (itemsPerSlide - 1)) {
+          var it = itemsPerSlide - (totalItems - idx);
+          for (var i = 0; i < it; i++) {
+            // append slides to end
+            if (e.direction == "left") {
+              $(".carousel-item").eq(i).appendTo(".carousel-inner");
+            } else {
+              $(".carousel-item").eq(0).appendTo(".carousel-inner");
+            }
+          }
+        }
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
