@@ -1,0 +1,233 @@
+/*----------Reset Styles----------*/
+* {
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*-----Common use classes-------*/
+.uppercase{
+    text-transform: uppercase;
+}
+.bold{
+    font-weight: bold;
+ 
+}
+.text-center{
+    text-align: center;
+}
+.center-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop-shadow{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+}
+.text-blue{
+    color: #1746CF;
+}
+.poppins-font{
+    font-family: 'Poppins', sans-serif;
+}
+.blue-btn{
+    padding: 16px 23px;
+    background: #1746CF;
+    color:white;
+    border: 1px solid #1746CF;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Poppins', sans-serif;
+}
+.normal{
+    font-style: normal;
+}
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    color:  #333333;
+    font-size: 24px;
+}
+.side-img{
+    max-width: 100%;
+    height: auto;
+}
+.template-img{
+    width: 100%;
+    height: 550px;
+}
+.top-margin{
+    margin-top: 10%;
+}
+.small-pad{
+    padding-top: 7%;
+}
+/*------------ Hero Section ----------------*/
+#hero-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+#hero-img{
+   
+    margin-left: 10%;
+}
+#hero-cta{
+    text-align: left;
+}
+/*------- Supported Tech Stack section-----*/
+#stack-section{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,200px));
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 4%;
+}
+
+/*------ New Templates Section-------*/
+.new-templates-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------- Template Feautures Grid -------------*/
+#template-features-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,360px));
+    align-items: center;
+    justify-content: center;
+}
+.template-feature{
+    background: #3896B6;
+    border-radius: 5px;
+    max-width: 360px;
+    color: white;
+    height: 150px;
+    margin: 20px;
+}
+/*--------- Client Testimonials Grid -------------*/
+#client-testimonials-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,360px));
+    align-items: center;
+    justify-content: center;
+}
+.client-testimonial{
+    background: #C1DEE2;
+    border-radius: 5px;
+    max-width: 366px;
+    height: 316px;
+    margin: 20px;
+    padding:15%;
+}
+/*------- Footer Section ---------*/
+#footer-section{
+    background: #3858B6;
+    padding-top: 5%;
+    color: white;
+}
+.footer-second{
+    border-top: white 1px solid;
+    padding-top: 3%;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: white;
+    padding: 0;
+}
+.social-list li{
+    
+    list-style: none;
+    display: inline;
+    padding: 10px 10px 10px 0;
+}
+.list-inline li{
+    display: inline;
+    padding: 10px 10px 10px 0;
+}
+/*-------Media-Queries---------*/
+@media screen and (max-width: 540px) {
+   
+    #hero-cta{
+        padding: 12%;
+    }
+    #hero-img{
+        display: none;
+    }
+    #about-img{
+        display: none;
+    }
+    .new-templates-grid{
+        padding: 8%;
+    }
+    .side-img{
+        max-width: 100%;
+        height: auto;
+        padding:10%;
+    }
+    #brand-name{
+        font-size: 25px;
+    }
+    .navbar-custom .navbar-nav .nav-item .nav-link {
+        color:  #333333;
+        font-size: 16px;
+    }
+    .img-caption{
+        margin-top: -10%
+    }
+    .view-all-btn{
+        margin-bottom: 12%;
+        font-size: 16px;
+    }
+    .template-header {
+        margin-bottom: -12%;
+    }
+}
+@media screen and (min-width: 992px){
+    #main-nav{
+        padding-right: 11%;
+        padding-left: 9%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .nav-item{
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 10%;
+        
+    }
+   
+}
+@media screen and (min-width: 541px) and (max-width: 992px){
+    #main-nav{
+        padding-right: 5.5%;
+        padding-left: 5.5%;
+        padding-top: 10px;
+    
+    }
+    
+        #hero-section{
+         margin-top: 20%;
+        
+        }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1240px){
+    #main-nav{
+        padding-right: 5.5%;
+        padding-left: 5.5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
