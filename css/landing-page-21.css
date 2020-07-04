@@ -6,12 +6,16 @@ a {
   color: black;
 }
 
-.navbar, .jumbotron {
+.navbar,
+.jumbotron {
   box-shadow: 0px 1.64301px 1.64301px rgba(0, 0, 0, 0.25);
 }
 
+.card {
+    border-radius: 0!important;
+}
 .card-img-top {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .navbar-brand {
@@ -41,27 +45,143 @@ a {
 }
 
 .border-bottom {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.548)!important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.548) !important;
 }
 
+.top-text h2 {
+    font-family: 'Montserrat' sans-serif;
+    font-size: 21.6066px;
+    line-height: 26px;
+}
+
+.form-control {
+    background-color: #eceaea;
+    font-size: 9.65598px;
+    line-height: 12px;
+    color: #6a6666;
+}
+
+.card-title {
+  font-size: 10.4123px;
+  line-height: 13px;
+  margin-bottom: 0.5rem !important;
+}
+
+.card-content {
+    font-size: 5.5532px;
+    line-height: 9px;
+    color: #6a6666;
+}
+
+.see-more {
+  font-size: 8.3298px;
+  line-height: 10px;
+  background-color: #ff1d72;
+  color: white;
+}
+
+.template-feature h5 {
+  font-size: 13.5282px;
+  line-height: 16px;
+}
+
+.template-feature img {
+  height: 25px;
+  width: 25px;
+  border: 1px solid #ff1d72;
+  border-radius: 50%;
+}
+.feature {
+  border-radius: 5.4px;
+  background-color: #eceaea;
+}
+
+.template {
+  font-size: 21.6066px;
+  line-height: 26px;
+}
+
+.gratified {
+  font-size: 21.6066px;
+  line-height: 26px;
+}
+
+.disclaimer p {
+  font-size: 6.30194px;
+  line-height: 8px;
+  background-color: #ff1d72;
+}
+
+.footer {
+    font-size: 15.3385px;
+    line-height: 19px;
+}
+
+.footer-terms {
+    color: white;
+}
+
+.logo-icon {
+    color: #ff1d72;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+@media (min-width: 576px) {
+    .form-control {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: initial;
+    }
+
+  .card-content {
+    font-size: 10.5532px;
+    line-height: 14px;
+  }
+
+  .see-more {
+    font-size: initial;
+  }
+
+  .template-feature h5 {
+    font-size: large;
+  }
+
+  .disclaimer p {
+    font-size: 10.30194px;
+    line-height: 12px;
+  }
+
+  .footer {
+    font-size: 17.3385px;
+    line-height: 21px;
+  }
+}
 
 @media (min-width: 992px) {
-    .top-text h2 {
-        font-size: 48px !important;
-        line-height: 50px !important;
-    }
-  .card-img-top {
-      height: 400px!important;
+  .top-text h2 {
+    font-size: 48px !important;
+    line-height: 50px !important;
   }
-  
-    .card-title {
+
+  .card {
+      border-radius: 4px;
+  }
+
+  .card-img-top {
+    height: 400px !important;
+  }
+
+  .card-title {
     font-size: 20px;
     line-height: 27px;
   }
 
   .card-content {
-    font-size: 11px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 25px;
   }
 
   .form-control {
@@ -77,11 +197,15 @@ a {
     border-radius: 13px !important;
   }
 
-  p.disclaimer {
+  .template {
+      font-size: 2rem;
+  }
+
+  .disclaimer p {
     font-size: 20px !important;
     line-height: 24px !important;
   }
-  
+
   #brand-name {
     font-size: 38.1567px;
     line-height: 48px;
@@ -91,15 +215,20 @@ a {
     width: 20px;
     height: 20px;
   }
-  
+
   .carousel-indicators .active {
     width: 38.1px;
     height: 38.1px;
   }
 
-  .footer-text, .footer-text p {
-      color: #FF1D72!important;
-      font-family: 'Source Sans Pro', sans-serif;
+  .footer-terms,
+  .footer-terms p {
+    color: #ff1d72 !important;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: small;
+  }
+
+  .logo-icon {
       font-size: small;
   }
 }
