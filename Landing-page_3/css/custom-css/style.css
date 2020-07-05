@@ -1,0 +1,155 @@
+
+.header-bg{
+	background-image: linear-gradient(to bottom right,rgba(15, 64, 224, 0.8), rgba(15, 64, 224, 0.8)),url("../../images/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*min-height: 1243px;*/
+}
+
+.menu-color li a{
+	color: #ffff
+}
+.custom-nav-menu li a{
+	color: #000000
+}
+
+.banner-text h1{
+	font-size: 3rem;
+	text-shadow: 1px 4px 7px grey;
+}
+.banner-text span{
+	color: #0468ff
+}
+
+.custom-text{
+	color: #0468ff
+}
+.custom-text-2{
+	color: #24c5ea
+}
+.custom-btn{
+	border: 3.5px solid #05b994;
+	/*background-color: #30a8f4;*/
+	padding: 5px 7px;
+	border-radius: 4px;
+	color: #ffff
+}
+
+.custom-circle{
+	height: 24px;
+	width: 24px;
+	background-color: #ff6b00;
+	position: absolute;
+	right: 1px;
+	top: -10px
+
+}
+
+.section-features{
+	background-color: #02bde7;
+}
+.section-features .row img{
+	/*height: 30%;*/
+	width: : 100px;
+}
+
+.custom-bg-transparent{
+	background-image: linear-gradient(rgba(14, 192, 232,0.9),rgba(14, 192, 232,0.9)), url("../../images/bg.png");
+	background-size: cover;
+}
+
+.divider-1, .divider-2{
+	height: 4px;
+	width: 80px;
+}
+.divider-1{
+	background: #ffff;
+}
+.divider-2{
+	background: #c4c4c4;
+}
+
+.img-pos{
+	top: 
+}
+
+.custom-bg{
+	background-color: #0ec0e8; 
+}
+
+
+.custom-container{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.item{
+	display: flex;
+	flex-direction: column;
+	/*padding: 20px;
+	margin: 20px;
+	width: 143px;
+	height: 143px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  border: 2px solid #eaefee;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px grey;*/
+}
+
+.sub-item{
+		padding: 20px;
+		margin: 20px;
+		width: 143px;
+		height: 143px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  border: 2px solid #eaefee;
+	  border-radius: 10px;
+	  box-shadow: 1px 1px 8px grey;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+	.sub-item{
+		width: 104px;
+		height: 104px;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	.banner-text h1{
+		font-size: 1.2rem;
+		text-shadow: 1px 4px 7px grey;
+	}
+	.custom-btn{
+		border: 2px solid #0468ff;
+		background-color: #30a8f4;
+		padding: 3px 4px;
+		border-radius: 6px;
+		font-size: 0.8rem;
+	}
+	.custom-btn-2{
+		border: 2px solid #0468ff;
+		background-color: #05b994;
+		padding: 3px 4px;
+		border-radius: 6px;
+		font-size: 0.8rem;
+	}
+}
+
+
+
+
