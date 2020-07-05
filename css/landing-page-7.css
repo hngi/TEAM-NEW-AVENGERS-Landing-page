@@ -1,0 +1,87 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+body{
+   background: #FFFFFF !important;
+box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.06);
+}
+.row{
+    margin-bottom: 4rem !important;
+}
+.navbar{
+    background: #FFFFFF !important;
+    padding: 0 !important;
+    padding-top: 1rem !important;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+.nav-item{
+    margin-right: 2rem;
+}
+.main-section{
+     position: relative;
+    background: url('../img/landing\ image\ \(2\).png') center center ;
+    background-size: cover;
+   height: 90vh;
+    width: 100%;
+}
+
+.main-section span{
+    font-size: 50px;
+  
+}
+.main-section div{
+    position: absolute;
+   text-align: center;
+    top: 30%;
+    left: 27%;
+    font-size: 20px;
+    color: white;  
+    font-weight: bold;
+}
+@media(max-width : 1500px){
+    .main-section img {
+        padding-right: 4rem ;
+    }
+}
+.mart{
+    font-size: 72px;
+}
+
+@media(max-width : 800px){
+.main-section {
+    padding: 0;
+}
+    .main-section div{
+        position: relative;
+   text-align: center;
+    top: 210px;
+    left: 0%;
+    font-size: 17px;
+    }
+    .main-section img {
+        padding-right: 0 !important;
+    }
+    .main-section span{
+        font-size: 25px;
+    }
+    footer .flex-column{
+        flex-direction: row !important;
+    }
+    .mart{
+        font-size: 1.75rem;
+    }
+    .row .col-sm{
+        margin: auto !important;
+      
+    }
+}
+p{
+    font-size: 20px;
+}
+
+
+
